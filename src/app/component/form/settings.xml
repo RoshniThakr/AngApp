@@ -1,0 +1,837 @@
+<?xml version="1.0"?>
+<testsuite name="HeadlessChrome 0.0.0 (Linux 0.0.0)" package="unit" timestamp="2022-07-19T10:22:41" id="0" hostname="workspacez5qp24p84hsw5op3.ws-84646576cd-5dz9f" tests="159" errors="0" failures="46" time="13.198">
+  <properties>
+    <property name="browser.fullName" value="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/78.0.3904.108 Safari/537.36"/>
+  </properties>
+  <testcase name="AllPatientsListComponent should call getAllPatientsList method when page loads " time="0.127" classname="unit.AllPatientsListComponent"/>
+  <testcase name="AllPatientsListComponent should call view method with the id of selected patient" time="0.081" classname="unit.AllPatientsListComponent"/>
+  <testcase name="AllPatientsListComponent should navigate to patientList page with selected patientId : case 1" time="0.077" classname="unit.AllPatientsListComponent"/>
+  <testcase name="AllPatientsListComponent should navigate to patientList page with selected patientId : case 2" time="0.056" classname="unit.AllPatientsListComponent"/>
+  <testcase name="AllRequestedAppointmentsComponent should call requestedAppointments method by default " time="0.063" classname="unit.AllRequestedAppointmentsComponent"/>
+  <testcase name="AllRequestedAppointmentsComponent should call view method with the id of selected patient" time="0.063" classname="unit.AllRequestedAppointmentsComponent"/>
+  <testcase name="AllRequestedAppointmentsComponent should navigate to patientList page with selected patientId" time="0.065" classname="unit.AllRequestedAppointmentsComponent"/>
+  <testcase name="AllRequestedAppointmentsComponent should call cancelAppointment method with the id of selected patient" time="0.055" classname="unit.AllRequestedAppointmentsComponent"/>
+  <testcase name="AllRequestedAppointmentsComponent should call deleteAppointment method of dataService with the id of selected patient" time="0.054" classname="unit.AllRequestedAppointmentsComponent"/>
+  <testcase name="AllRequestedAppointmentsComponent should fetch all appointments after cancelling an appointment" time="0.055" classname="unit.AllRequestedAppointmentsComponent"/>
+  <testcase name="FormComponent All validation errors should be hidden and form should be invalid by default" time="0.201" classname="unit.FormComponent"/>
+  <testcase name="FormComponent should display no firstname validation error when the field kept as null(dirty)" time="0.174" classname="unit.FormComponent"/>
+  <testcase name="FormComponent should display firstname minimum length validation error when the field has less than 3 length" time="0.151" classname="unit.FormComponent"/>
+  <testcase name="FormComponent should display firstname maximun length validation error when the field has greater than 20 length" time="0.147" classname="unit.FormComponent"/>
+  <testcase name="FormComponent should display no firstname validation error when the field kept as null(dirty)" time="0.149" classname="unit.FormComponent"/>
+  <testcase name="FormComponent should display lastname minimum length validation error when the field has less than 3 length" time="0.151" classname="unit.FormComponent"/>
+  <testcase name="FormComponent should display lastname maximun length validation error when the field has greater than 20 length" time="0.173" classname="unit.FormComponent"/>
+  <testcase name="FormComponent gender field validity" time="0.158" classname="unit.FormComponent"/>
+  <testcase name="FormComponent gender validation gets pass when clicking male radio button" time="0.226" classname="unit.FormComponent"/>
+  <testcase name="FormComponent gender validation gets pass when clicking female radio button" time="0.191" classname="unit.FormComponent"/>
+  <testcase name="FormComponent should display no date of birth validation error when the field kept as null(dirty)" time="0.137" classname="unit.FormComponent"/>
+  <testcase name="FormComponent Date of birth validation gets pass when the field has valid value" time="0.165" classname="unit.FormComponent"/>
+  <testcase name="FormComponent mobile field validity" time="0.495" classname="unit.FormComponent">
+    <failure type="">Expected undefined to be truthy.
+    at UserContext.&lt;anonymous&gt; src/app/component/form/form.component.spec.ts:447:31)
+    at ZoneDelegate.webpackJsonp../node_modules/zone.js/dist/zone.js.ZoneDelegate.invoke node_modules/zone.js/dist/zone.js:391:1)
+    at ProxyZoneSpec.webpackJsonp../node_modules/zone.js/dist/zone-testing.js.ProxyZoneSpec.onInvoke node_modules/zone.js/dist/zone-testing.js:289:1)
+    at ZoneDelegate.webpackJsonp../node_modules/zone.js/dist/zone.js.ZoneDelegate.invoke node_modules/zone.js/dist/zone.js:390:1)
+</failure>
+  </testcase>
+  <testcase name="FormComponent should display no mobile number validation error when the field has kept as null(dirty)" time="0.135" classname="unit.FormComponent"/>
+  <testcase name="FormComponent should display mobile number pattern validation error when the field has value" time="0.166" classname="unit.FormComponent">
+    <failure type="">Expected true to be falsy.
+    at http://localhost:9876/_karma_webpack_/webpack:/src/app/component/form/form.component.spec.ts:498:32
+    at ZoneDelegate.webpackJsonp../node_modules/zone.js/dist/zone.js.ZoneDelegate.invoke node_modules/zone.js/dist/zone.js:391:1)
+    at FakeAsyncTestZoneSpec.webpackJsonp../node_modules/zone.js/dist/zone-testing.js.FakeAsyncTestZoneSpec.onInvoke node_modules/zone.js/dist/zone-testing.js:1331:1)
+    at ProxyZoneSpec.webpackJsonp../node_modules/zone.js/dist/zone-testing.js.ProxyZoneSpec.onInvoke node_modules/zone.js/dist/zone-testing.js:286:1)
+</failure>
+    <failure type="">Expected null to be truthy.
+    at http://localhost:9876/_karma_webpack_/webpack:/src/app/component/form/form.component.spec.ts:500:38
+    at ZoneDelegate.webpackJsonp../node_modules/zone.js/dist/zone.js.ZoneDelegate.invoke node_modules/zone.js/dist/zone.js:391:1)
+    at FakeAsyncTestZoneSpec.webpackJsonp../node_modules/zone.js/dist/zone-testing.js.FakeAsyncTestZoneSpec.onInvoke node_modules/zone.js/dist/zone-testing.js:1331:1)
+    at ProxyZoneSpec.webpackJsonp../node_modules/zone.js/dist/zone-testing.js.ProxyZoneSpec.onInvoke node_modules/zone.js/dist/zone-testing.js:286:1)
+</failure>
+    <failure type="">Error: Uncaught (in promise): TypeError: Cannot read property 'textContent' of null
+TypeError: Cannot read property 'textContent' of null
+    at http://localhost:9876/_karma_webpack_/webpack:/src/app/component/form/form.component.spec.ts:502:73
+    at ZoneDelegate.webpackJsonp../node_modules/zone.js/dist/zone.js.ZoneDelegate.invoke node_modules/zone.js/dist/zone.js:391:1)
+    at FakeAsyncTestZoneSpec.webpackJsonp../node_modules/zone.js/dist/zone-testing.js.FakeAsyncTestZoneSpec.onInvoke node_modules/zone.js/dist/zone-testing.js:1331:1)
+    at ProxyZoneSpec.webpackJsonp../node_modules/zone.js/dist/zone-testing.js.ProxyZoneSpec.onInvoke node_modules/zone.js/dist/zone-testing.js:286:1)
+    at ZoneDelegate.webpackJsonp../node_modules/zone.js/dist/zone.js.ZoneDelegate.invoke node_modules/zone.js/dist/zone.js:390:1)
+    at Zone.webpackJsonp../node_modules/zone.js/dist/zone.js.Zone.run node_modules/zone.js/dist/zone.js:150:1)
+    at http://localhost:9876/_karma_webpack_/webpack:/node_modules/zone.js/dist/zone.js:889:1
+    at ZoneDelegate.webpackJsonp../node_modules/zone.js/dist/zone.js.ZoneDelegate.invokeTask node_modules/zone.js/dist/zone.js:423:1)
+    at ProxyZoneSpec.webpackJsonp../node_modules/zone.js/dist/zone-testing.js.ProxyZoneSpec.onInvokeTask node_modules/zone.js/dist/zone-testing.js:320:1)
+    at ZoneDelegate.webpackJsonp../node_modules/zone.js/dist/zone.js.ZoneDelegate.invokeTask node_modules/zone.js/dist/zone.js:422:1)
+    at ZoneDelegate.webpackJsonp../node_modules/zone.js/dist/zone.js.ZoneDelegate.invokeTask node_modules/zone.js/dist/zone.js:423:1)
+    at ProxyZoneSpec.webpackJsonp../node_modules/zone.js/dist/zone-testing.js.ProxyZoneSpec.onInvokeTask node_modules/zone.js/dist/zone-testing.js:320:1)
+    at ZoneDelegate.webpackJsonp../node_modules/zone.js/dist/zone.js.ZoneDelegate.invokeTask node_modules/zone.js/dist/zone.js:422:1)
+    at resolvePromise node_modules/zone.js/dist/zone.js:831:1)
+    at http://localhost:9876/_karma_webpack_/webpack:/node_modules/zone.js/dist/zone.js:896:1
+    at Zone.webpackJsonp../node_modules/zone.js/dist/zone.js.Zone.runTask node_modules/zone.js/dist/zone.js:195:1)
+    at webpackJsonp../node_modules/zone.js/dist/zone.js.ZoneTask.invokeTask node_modules/zone.js/dist/zone.js:498:1)
+    at ZoneTask.invoke node_modules/zone.js/dist/zone.js:487:1)
+    at FakeAsyncTestZoneSpec.webpackJsonp../node_modules/zone.js/dist/zone-testing.js.FakeAsyncTestZoneSpec.flushMicrotasks node_modules/zone.js/dist/zone-testing.js:1225:1)
+    at flushMicrotasks node_modules/@angular/core/esm5/testing.js:483:1)
+</failure>
+  </testcase>
+  <testcase name="FormComponent should display mobile maximun length validation error when the field has greater than 10 length" time="0.124" classname="unit.FormComponent"/>
+  <testcase name="FormComponent should display email pattern validation error" time="0.13" classname="unit.FormComponent"/>
+  <testcase name="FormComponent should not display email validation error when the email field is valid" time="0.144" classname="unit.FormComponent"/>
+  <testcase name="FormComponent should call submitform method for valid form" time="0.234" classname="unit.FormComponent"/>
+  <testcase name="FormComponent should navigate to PatientList page after successful registration" time="0.131" classname="unit.FormComponent"/>
+  <testcase name="HeaderComponent should get profile details by default(when page loads)" time="0.067" classname="unit.HeaderComponent"/>
+  <testcase name="HeaderComponent should get logged user details" time="0.058" classname="unit.HeaderComponent"/>
+  <testcase name="HeaderComponent should get error on occurence of error" time="0.063" classname="unit.HeaderComponent">
+    <failure type="">Error: [object Object]
+    at viewWrappedDebugError node_modules/@angular/core/esm5/core.js:9806:1)
+    at callWithDebugContext node_modules/@angular/core/esm5/core.js:15108:1)
+    at Object.debugCheckAndUpdateView [as checkAndUpdateView] node_modules/@angular/core/esm5/core.js:14635:1)
+    at ViewRef_.webpackJsonp../node_modules/@angular/core/esm5/core.js.ViewRef_.detectChanges node_modules/@angular/core/esm5/core.js:11619:1)
+    at ComponentFixture.webpackJsonp../node_modules/@angular/core/esm5/testing.js.ComponentFixture._tick node_modules/@angular/core/esm5/testing.js:186:1)
+    at http://localhost:9876/_karma_webpack_/webpack:/node_modules/@angular/core/esm5/testing.js:206:42
+    at ZoneDelegate.webpackJsonp../node_modules/zone.js/dist/zone.js.ZoneDelegate.invoke node_modules/zone.js/dist/zone.js:391:1)
+    at FakeAsyncTestZoneSpec.webpackJsonp../node_modules/zone.js/dist/zone-testing.js.FakeAsyncTestZoneSpec.onInvoke node_modules/zone.js/dist/zone-testing.js:1331:1)
+    at ProxyZoneSpec.webpackJsonp../node_modules/zone.js/dist/zone-testing.js.ProxyZoneSpec.onInvoke node_modules/zone.js/dist/zone-testing.js:286:1)
+    at ZoneDelegate.webpackJsonp../node_modules/zone.js/dist/zone.js.ZoneDelegate.invoke node_modules/zone.js/dist/zone.js:390:1)
+</failure>
+  </testcase>
+  <testcase name="HeaderComponent should logout when clicked on &quot;logout&quot; menu" time="0.05" classname="unit.HeaderComponent"/>
+  <testcase name="LoginComponent All validation errors should be hidden and form should be invalid by default" time="0.091" classname="unit.LoginComponent"/>
+  <testcase name="LoginComponent should display no username validation error when the field kept as null(dirty)" time="0.107" classname="unit.LoginComponent"/>
+  <testcase name="LoginComponent should display minlength 3 username validation error when the username length less than 3" time="0.082" classname="unit.LoginComponent"/>
+  <testcase name="LoginComponent should display maxlength username validation error when the username length greater than 20" time="0.095" classname="unit.LoginComponent"/>
+  <testcase name="LoginComponent should not display any error when the username field is valid" time="0.102" classname="unit.LoginComponent"/>
+  <testcase name="LoginComponent should display no password validation error when the field kept as null(dirty)" time="0.084" classname="unit.LoginComponent"/>
+  <testcase name="LoginComponent should display minlength 8 password validation error when the password length less than 8" time="0.076" classname="unit.LoginComponent"/>
+  <testcase name="LoginComponent should display maxlength password validation error when the password length exceeds 20" time="0.1" classname="unit.LoginComponent"/>
+  <testcase name="LoginComponent should display password pattern validation error" time="0.088" classname="unit.LoginComponent"/>
+  <testcase name="LoginComponent should not display password error when the password field is valid" time="0.087" classname="unit.LoginComponent"/>
+  <testcase name="LoginComponent should enable login button(form valid) when both field are valid" time="0.073" classname="unit.LoginComponent"/>
+  <testcase name="LoginComponent should hide validation messages and call login method from authservice for valid credentials" time="0.115" classname="unit.LoginComponent"/>
+  <testcase name="LoginComponent should redirect to profile page on correct credentials" time="0.179" classname="unit.LoginComponent"/>
+  <testcase name="LoginComponent should not redirect to other pages on incorrect credentials" time="0.076" classname="unit.LoginComponent"/>
+  <testcase name="LoginComponent should not redirect to other pages on occurence of error" time="0.084" classname="unit.LoginComponent"/>
+  <testcase name="LoginComponent #dologin should return false if form is invalid" time="0.079" classname="unit.LoginComponent"/>
+  <testcase name="LoginComponent clear localStorage if any, when login" time="0.096" classname="unit.LoginComponent"/>
+  <testcase name="LoginComponent should navigate to register-new-user page when clicked on &quot;sign up&quot; button" time="0.077" classname="unit.LoginComponent"/>
+  <testcase name="ProfileComponent should display profile details on load" time="0.125" classname="unit.ProfileComponent"/>
+  <testcase name="ProfileComponent should get getUserDetails method error on occurence of error" time="0.115" classname="unit.ProfileComponent">
+    <failure type="">Error: [object Object]
+    at viewWrappedDebugError node_modules/@angular/core/esm5/core.js:9806:1)
+    at callWithDebugContext node_modules/@angular/core/esm5/core.js:15108:1)
+    at Object.debugCheckAndUpdateView [as checkAndUpdateView] node_modules/@angular/core/esm5/core.js:14635:1)
+    at ViewRef_.webpackJsonp../node_modules/@angular/core/esm5/core.js.ViewRef_.detectChanges node_modules/@angular/core/esm5/core.js:11619:1)
+    at ComponentFixture.webpackJsonp../node_modules/@angular/core/esm5/testing.js.ComponentFixture._tick node_modules/@angular/core/esm5/testing.js:186:1)
+    at http://localhost:9876/_karma_webpack_/webpack:/node_modules/@angular/core/esm5/testing.js:206:42
+    at ZoneDelegate.webpackJsonp../node_modules/zone.js/dist/zone.js.ZoneDelegate.invoke node_modules/zone.js/dist/zone.js:391:1)
+    at FakeAsyncTestZoneSpec.webpackJsonp../node_modules/zone.js/dist/zone-testing.js.FakeAsyncTestZoneSpec.onInvoke node_modules/zone.js/dist/zone-testing.js:1331:1)
+    at ProxyZoneSpec.webpackJsonp../node_modules/zone.js/dist/zone-testing.js.ProxyZoneSpec.onInvoke node_modules/zone.js/dist/zone-testing.js:286:1)
+    at ZoneDelegate.webpackJsonp../node_modules/zone.js/dist/zone.js.ZoneDelegate.invoke node_modules/zone.js/dist/zone.js:390:1)
+</failure>
+  </testcase>
+  <testcase name="ProfileComponent should display edit profile form on edit profile button click" time="0.104" classname="unit.ProfileComponent"/>
+  <testcase name="ProfileComponent should display profile details on clicking discard button" time="0.096" classname="unit.ProfileComponent"/>
+  <testcase name="ProfileComponent should validate the edit profile form" time="0.122" classname="unit.ProfileComponent"/>
+  <testcase name="ProfileComponent should populate form fields with values on edit profile button click" time="0.102" classname="unit.ProfileComponent"/>
+  <testcase name="ProfileComponent should submit profile changes with validation" time="0.097" classname="unit.ProfileComponent">
+    <failure type="">Expected spy discardEdit to have been called.
+    at http://localhost:9876/_karma_webpack_/webpack:/src/app/component/profile/profile.component.spec.ts:274:39
+    at ZoneDelegate.webpackJsonp../node_modules/zone.js/dist/zone.js.ZoneDelegate.invoke node_modules/zone.js/dist/zone.js:391:1)
+    at FakeAsyncTestZoneSpec.webpackJsonp../node_modules/zone.js/dist/zone-testing.js.FakeAsyncTestZoneSpec.onInvoke node_modules/zone.js/dist/zone-testing.js:1331:1)
+    at ProxyZoneSpec.webpackJsonp../node_modules/zone.js/dist/zone-testing.js.ProxyZoneSpec.onInvoke node_modules/zone.js/dist/zone-testing.js:286:1)
+</failure>
+  </testcase>
+  <testcase name="ProfileComponent should not call getProfileDetails if profile is not updated" time="0.093" classname="unit.ProfileComponent">
+    <failure type="">Expected spy getProfileDetails not to have been called.
+    at UserContext.&lt;anonymous&gt; src/app/component/profile/profile.component.spec.ts:284:45)
+    at UserContext.&lt;anonymous&gt; node_modules/@angular/core/esm5/testing.js:411:1)
+    at ZoneDelegate.webpackJsonp../node_modules/zone.js/dist/zone.js.ZoneDelegate.invoke node_modules/zone.js/dist/zone.js:391:1)
+    at ProxyZoneSpec.webpackJsonp../node_modules/zone.js/dist/zone-testing.js.ProxyZoneSpec.onInvoke node_modules/zone.js/dist/zone-testing.js:289:1)
+</failure>
+  </testcase>
+  <testcase name="ProfileComponent getUserDetails should return error on occurence of error" time="0.091" classname="unit.ProfileComponent">
+    <failure type="">Error: [object Object]
+    at viewWrappedDebugError node_modules/@angular/core/esm5/core.js:9806:1)
+    at callWithDebugContext node_modules/@angular/core/esm5/core.js:15108:1)
+    at Object.debugCheckAndUpdateView [as checkAndUpdateView] node_modules/@angular/core/esm5/core.js:14635:1)
+    at ViewRef_.webpackJsonp../node_modules/@angular/core/esm5/core.js.ViewRef_.detectChanges node_modules/@angular/core/esm5/core.js:11619:1)
+    at ComponentFixture.webpackJsonp../node_modules/@angular/core/esm5/testing.js.ComponentFixture._tick node_modules/@angular/core/esm5/testing.js:186:1)
+    at http://localhost:9876/_karma_webpack_/webpack:/node_modules/@angular/core/esm5/testing.js:206:42
+    at ZoneDelegate.webpackJsonp../node_modules/zone.js/dist/zone.js.ZoneDelegate.invoke node_modules/zone.js/dist/zone.js:391:1)
+    at FakeAsyncTestZoneSpec.webpackJsonp../node_modules/zone.js/dist/zone-testing.js.FakeAsyncTestZoneSpec.onInvoke node_modules/zone.js/dist/zone-testing.js:1331:1)
+    at ProxyZoneSpec.webpackJsonp../node_modules/zone.js/dist/zone-testing.js.ProxyZoneSpec.onInvoke node_modules/zone.js/dist/zone-testing.js:286:1)
+    at ZoneDelegate.webpackJsonp../node_modules/zone.js/dist/zone.js.ZoneDelegate.invoke node_modules/zone.js/dist/zone.js:390:1)
+</failure>
+  </testcase>
+  <testcase name="ProfileComponent updateProfile should return error on occurence of error" time="0.087" classname="unit.ProfileComponent">
+    <failure type="">HttpErrorResponse: Http failure response for (unknown url): 404 Not Found
+</failure>
+  </testcase>
+  <testcase name="RegisterNewUserComponent should navigate to login when clicked on back button" time="0.095" classname="unit.RegisterNewUserComponent"/>
+  <testcase name="RegisterNewUserComponent All validation errors should be hidden and form should be invalid by default" time="0.114" classname="unit.RegisterNewUserComponent"/>
+  <testcase name="RegisterNewUserComponent should display no username validation error when the field kept as null(dirty)" time="0.095" classname="unit.RegisterNewUserComponent"/>
+  <testcase name="RegisterNewUserComponent should display minlength 3 username validation error when the username length less than 3" time="0.097" classname="unit.RegisterNewUserComponent"/>
+  <testcase name="RegisterNewUserComponent should display maxlength 20 username validation error when the username length greater than 20" time="0.088" classname="unit.RegisterNewUserComponent"/>
+  <testcase name="RegisterNewUserComponent should display username pattern validation error" time="0.126" classname="unit.RegisterNewUserComponent"/>
+  <testcase name="RegisterNewUserComponent should not display any error when the username field is valid" time="0.088" classname="unit.RegisterNewUserComponent"/>
+  <testcase name="RegisterNewUserComponent should display no password validation error when the field kept as null(dirty)" time="0.099" classname="unit.RegisterNewUserComponent"/>
+  <testcase name="RegisterNewUserComponent should display minlength 8 password validation error when the password length less than 8" time="0.089" classname="unit.RegisterNewUserComponent"/>
+  <testcase name="RegisterNewUserComponent should display maxlength 20 password validation error when the password length greater less than 20" time="0.098" classname="unit.RegisterNewUserComponent"/>
+  <testcase name="RegisterNewUserComponent should display password pattern validation error" time="0.116" classname="unit.RegisterNewUserComponent"/>
+  <testcase name="RegisterNewUserComponent should not display password error when the password field is valid" time="0.095" classname="unit.RegisterNewUserComponent"/>
+  <testcase name="RegisterNewUserComponent should display mobile pattern validation error" time="0.091" classname="unit.RegisterNewUserComponent">
+    <failure type="">Expected null to be truthy.
+    at http://localhost:9876/_karma_webpack_/webpack:/src/app/component/register-new-user/register-new-user.component.spec.ts:357:28
+    at http://localhost:9876/_karma_webpack_/webpack:/node_modules/@angular/core/esm5/testing.js:411:1
+    at ZoneDelegate.webpackJsonp../node_modules/zone.js/dist/zone.js.ZoneDelegate.invoke node_modules/zone.js/dist/zone.js:391:1)
+    at ProxyZoneSpec.webpackJsonp../node_modules/zone.js/dist/zone-testing.js.ProxyZoneSpec.onInvoke node_modules/zone.js/dist/zone-testing.js:289:1)
+</failure>
+  </testcase>
+  <testcase name="RegisterNewUserComponent should not display mobile error when the mobile field is valid" time="0.091" classname="unit.RegisterNewUserComponent"/>
+  <testcase name="RegisterNewUserComponent should display email pattern validation error" time="0.092" classname="unit.RegisterNewUserComponent">
+    <failure type="">Expected null to be truthy.
+    at http://localhost:9876/_karma_webpack_/webpack:/src/app/component/register-new-user/register-new-user.component.spec.ts:390:27
+    at http://localhost:9876/_karma_webpack_/webpack:/node_modules/@angular/core/esm5/testing.js:411:1
+    at ZoneDelegate.webpackJsonp../node_modules/zone.js/dist/zone.js.ZoneDelegate.invoke node_modules/zone.js/dist/zone.js:391:1)
+    at ProxyZoneSpec.webpackJsonp../node_modules/zone.js/dist/zone-testing.js.ProxyZoneSpec.onInvoke node_modules/zone.js/dist/zone-testing.js:289:1)
+</failure>
+  </testcase>
+  <testcase name="RegisterNewUserComponent should not display email validation error when the email field is valid" time="0.097" classname="unit.RegisterNewUserComponent"/>
+  <testcase name="RegisterNewUserComponent should display location validation error when the field kept as null(dirty)" time="0.104" classname="unit.RegisterNewUserComponent"/>
+  <testcase name="RegisterNewUserComponent should not display location validation error when the location field is valid" time="0.195" classname="unit.RegisterNewUserComponent"/>
+  <testcase name="RegisterNewUserComponent should enable Create Account button(form valid) when all fields are valid" time="0.095" classname="unit.RegisterNewUserComponent"/>
+  <testcase name="RegisterNewUserComponent should call signUp method when all fields are valid" time="0.104" classname="unit.RegisterNewUserComponent"/>
+  <testcase name="RegisterNewUserComponent should redirect to login page after successful registration" time="0.308" classname="unit.RegisterNewUserComponent"/>
+  <testcase name="RegisterNewUserComponent should not redirect to login page on occurence of error" time="0.111" classname="unit.RegisterNewUserComponent"/>
+  <testcase name="RegisterNewUserComponent navigate to login page when clicked on back button" time="0.114" classname="unit.RegisterNewUserComponent"/>
+  <testcase name="ViewPatientComponent should call getParticularPatient method of DataService by default" time="0.12" classname="unit.ViewPatientComponent"/>
+  <testcase name="ViewPatientComponent Book Appointment &amp; Scheduled Appointment should be enabled by default" time="0.125" classname="unit.ViewPatientComponent"/>
+  <testcase name="ViewPatientComponent &quot;Scheduled Appointment&quot; button should be disabled after clicking on &quot;Scheduled Appointment&quot;" time="0.108" classname="unit.ViewPatientComponent">
+    <failure type="">Error: Uncaught (in promise): TypeError: Cannot read property 'disabled' of null
+TypeError: Cannot read property 'disabled' of null
+    at http://localhost:9876/_karma_webpack_/webpack:/src/app/component/view-patient/view-patient.component.spec.ts:189:83
+    at ZoneDelegate.webpackJsonp../node_modules/zone.js/dist/zone.js.ZoneDelegate.invoke node_modules/zone.js/dist/zone.js:391:1)
+    at FakeAsyncTestZoneSpec.webpackJsonp../node_modules/zone.js/dist/zone-testing.js.FakeAsyncTestZoneSpec.onInvoke node_modules/zone.js/dist/zone-testing.js:1331:1)
+    at ProxyZoneSpec.webpackJsonp../node_modules/zone.js/dist/zone-testing.js.ProxyZoneSpec.onInvoke node_modules/zone.js/dist/zone-testing.js:286:1)
+    at ZoneDelegate.webpackJsonp../node_modules/zone.js/dist/zone.js.ZoneDelegate.invoke node_modules/zone.js/dist/zone.js:390:1)
+    at Zone.webpackJsonp../node_modules/zone.js/dist/zone.js.Zone.run node_modules/zone.js/dist/zone.js:150:1)
+    at http://localhost:9876/_karma_webpack_/webpack:/node_modules/zone.js/dist/zone.js:889:1
+    at ZoneDelegate.webpackJsonp../node_modules/zone.js/dist/zone.js.ZoneDelegate.invokeTask node_modules/zone.js/dist/zone.js:423:1)
+    at ProxyZoneSpec.webpackJsonp../node_modules/zone.js/dist/zone-testing.js.ProxyZoneSpec.onInvokeTask node_modules/zone.js/dist/zone-testing.js:320:1)
+    at ZoneDelegate.webpackJsonp../node_modules/zone.js/dist/zone.js.ZoneDelegate.invokeTask node_modules/zone.js/dist/zone.js:422:1)
+    at ZoneDelegate.webpackJsonp../node_modules/zone.js/dist/zone.js.ZoneDelegate.invokeTask node_modules/zone.js/dist/zone.js:423:1)
+    at ProxyZoneSpec.webpackJsonp../node_modules/zone.js/dist/zone-testing.js.ProxyZoneSpec.onInvokeTask node_modules/zone.js/dist/zone-testing.js:320:1)
+    at ZoneDelegate.webpackJsonp../node_modules/zone.js/dist/zone.js.ZoneDelegate.invokeTask node_modules/zone.js/dist/zone.js:422:1)
+    at resolvePromise node_modules/zone.js/dist/zone.js:831:1)
+    at http://localhost:9876/_karma_webpack_/webpack:/node_modules/zone.js/dist/zone.js:896:1
+    at Zone.webpackJsonp../node_modules/zone.js/dist/zone.js.Zone.runTask node_modules/zone.js/dist/zone.js:195:1)
+    at webpackJsonp../node_modules/zone.js/dist/zone.js.ZoneTask.invokeTask node_modules/zone.js/dist/zone.js:498:1)
+    at ZoneTask.invoke node_modules/zone.js/dist/zone.js:487:1)
+    at FakeAsyncTestZoneSpec.webpackJsonp../node_modules/zone.js/dist/zone-testing.js.FakeAsyncTestZoneSpec.flushMicrotasks node_modules/zone.js/dist/zone-testing.js:1225:1)
+    at flushMicrotasks node_modules/@angular/core/esm5/testing.js:483:1)
+</failure>
+  </testcase>
+  <testcase name="ViewPatientComponent &quot;Book Appointment&quot; button should be disabled after clicking on &quot;Scheduled Appointment&quot;" time="0.124" classname="unit.ViewPatientComponent">
+    <failure type="">Error: Uncaught (in promise): TypeError: Cannot read property 'disabled' of null
+TypeError: Cannot read property 'disabled' of null
+    at http://localhost:9876/_karma_webpack_/webpack:/src/app/component/view-patient/view-patient.component.spec.ts:203:87
+    at ZoneDelegate.webpackJsonp../node_modules/zone.js/dist/zone.js.ZoneDelegate.invoke node_modules/zone.js/dist/zone.js:391:1)
+    at FakeAsyncTestZoneSpec.webpackJsonp../node_modules/zone.js/dist/zone-testing.js.FakeAsyncTestZoneSpec.onInvoke node_modules/zone.js/dist/zone-testing.js:1331:1)
+    at ProxyZoneSpec.webpackJsonp../node_modules/zone.js/dist/zone-testing.js.ProxyZoneSpec.onInvoke node_modules/zone.js/dist/zone-testing.js:286:1)
+    at ZoneDelegate.webpackJsonp../node_modules/zone.js/dist/zone.js.ZoneDelegate.invoke node_modules/zone.js/dist/zone.js:390:1)
+    at Zone.webpackJsonp../node_modules/zone.js/dist/zone.js.Zone.run node_modules/zone.js/dist/zone.js:150:1)
+    at http://localhost:9876/_karma_webpack_/webpack:/node_modules/zone.js/dist/zone.js:889:1
+    at ZoneDelegate.webpackJsonp../node_modules/zone.js/dist/zone.js.ZoneDelegate.invokeTask node_modules/zone.js/dist/zone.js:423:1)
+    at ProxyZoneSpec.webpackJsonp../node_modules/zone.js/dist/zone-testing.js.ProxyZoneSpec.onInvokeTask node_modules/zone.js/dist/zone-testing.js:320:1)
+    at ZoneDelegate.webpackJsonp../node_modules/zone.js/dist/zone.js.ZoneDelegate.invokeTask node_modules/zone.js/dist/zone.js:422:1)
+    at ZoneDelegate.webpackJsonp../node_modules/zone.js/dist/zone.js.ZoneDelegate.invokeTask node_modules/zone.js/dist/zone.js:423:1)
+    at ProxyZoneSpec.webpackJsonp../node_modules/zone.js/dist/zone-testing.js.ProxyZoneSpec.onInvokeTask node_modules/zone.js/dist/zone-testing.js:320:1)
+    at ZoneDelegate.webpackJsonp../node_modules/zone.js/dist/zone.js.ZoneDelegate.invokeTask node_modules/zone.js/dist/zone.js:422:1)
+    at resolvePromise node_modules/zone.js/dist/zone.js:831:1)
+    at http://localhost:9876/_karma_webpack_/webpack:/node_modules/zone.js/dist/zone.js:896:1
+    at Zone.webpackJsonp../node_modules/zone.js/dist/zone.js.Zone.runTask node_modules/zone.js/dist/zone.js:195:1)
+    at webpackJsonp../node_modules/zone.js/dist/zone.js.ZoneTask.invokeTask node_modules/zone.js/dist/zone.js:498:1)
+    at ZoneTask.invoke node_modules/zone.js/dist/zone.js:487:1)
+    at FakeAsyncTestZoneSpec.webpackJsonp../node_modules/zone.js/dist/zone-testing.js.FakeAsyncTestZoneSpec.flushMicrotasks node_modules/zone.js/dist/zone-testing.js:1225:1)
+    at flushMicrotasks node_modules/@angular/core/esm5/testing.js:483:1)
+</failure>
+  </testcase>
+  <testcase name="ViewPatientComponent should get diseasesList when clicking on &quot;Book Appointment&quot;" time="0.114" classname="unit.ViewPatientComponent">
+    <failure type="">Expected spy diseasesList to have been called.
+    at http://localhost:9876/_karma_webpack_/webpack:/src/app/component/view-patient/view-patient.component.spec.ts:219:39
+    at ZoneDelegate.webpackJsonp../node_modules/zone.js/dist/zone.js.ZoneDelegate.invoke node_modules/zone.js/dist/zone.js:391:1)
+    at FakeAsyncTestZoneSpec.webpackJsonp../node_modules/zone.js/dist/zone-testing.js.FakeAsyncTestZoneSpec.onInvoke node_modules/zone.js/dist/zone-testing.js:1331:1)
+    at ProxyZoneSpec.webpackJsonp../node_modules/zone.js/dist/zone-testing.js.ProxyZoneSpec.onInvoke node_modules/zone.js/dist/zone-testing.js:286:1)
+</failure>
+  </testcase>
+  <testcase name="ViewPatientComponent should call scheduleAppointment method for valid form input&quot;" time="0.179" classname="unit.ViewPatientComponent"/>
+  <testcase name="ViewPatientComponent should call scheduleAppointment method of DataService with appointment details" time="0.138" classname="unit.ViewPatientComponent"/>
+  <testcase name="ViewPatientComponent should navigate to requested_appointments page after booking an appointment" time="0.12" classname="unit.ViewPatientComponent"/>
+  <testcase name="ViewPatientComponent should call cancelAppointment method with selected appointment id" time="0.113" classname="unit.ViewPatientComponent"/>
+  <testcase name="ViewPatientComponent should call deleteAppointment method of DataService with selected appointment id" time="0.104" classname="unit.ViewPatientComponent"/>
+  <testcase name="ViewPatientComponent should call scheduleded method after deleting an appointment" time="0.108" classname="unit.ViewPatientComponent"/>
+  <testcase name="ViewPatientComponent should get particular patient appointments when clicking on &quot;scheduled Appointment&quot; button" time="0.101" classname="unit.ViewPatientComponent"/>
+  <testcase name="HeaderInterceptor should not add an authorization header for checkLogin method" time="0.011" classname="unit.HeaderInterceptor">
+    <failure type="">Error: Expected one matching request for criteria "Match URL: api/login", found none.
+    at HttpClientTestingBackend.webpackJsonp../node_modules/@angular/common/esm5/http/testing.js.HttpClientTestingBackend.expectOne node_modules/@angular/common/esm5/http/testing.js:419:1)
+    at UserContext.&lt;anonymous&gt; src/app/interceptors/headerInterceptor.spec.ts:37:34)
+    at ZoneDelegate.webpackJsonp../node_modules/zone.js/dist/zone.js.ZoneDelegate.invoke node_modules/zone.js/dist/zone.js:391:1)
+    at ProxyZoneSpec.webpackJsonp../node_modules/zone.js/dist/zone-testing.js.ProxyZoneSpec.onInvoke node_modules/zone.js/dist/zone-testing.js:289:1)
+    at ZoneDelegate.webpackJsonp../node_modules/zone.js/dist/zone.js.ZoneDelegate.invoke node_modules/zone.js/dist/zone.js:390:1)
+    at Zone.webpackJsonp../node_modules/zone.js/dist/zone.js.Zone.run node_modules/zone.js/dist/zone.js:150:1)
+    at runInTestZone node_modules/zone.js/dist/zone-testing.js:510:1)
+    at UserContext.&lt;anonymous&gt; node_modules/zone.js/dist/zone-testing.js:525:1)
+</failure>
+  </testcase>
+  <testcase name="HeaderInterceptor should not add an authorization header for regNewUser method" time="0.014" classname="unit.HeaderInterceptor">
+    <failure type="">Error: Expected one matching request for criteria "Match URL: api/register", found none.
+    at HttpClientTestingBackend.webpackJsonp../node_modules/@angular/common/esm5/http/testing.js.HttpClientTestingBackend.expectOne node_modules/@angular/common/esm5/http/testing.js:419:1)
+    at UserContext.&lt;anonymous&gt; src/app/interceptors/headerInterceptor.spec.ts:54:34)
+    at ZoneDelegate.webpackJsonp../node_modules/zone.js/dist/zone.js.ZoneDelegate.invoke node_modules/zone.js/dist/zone.js:391:1)
+    at ProxyZoneSpec.webpackJsonp../node_modules/zone.js/dist/zone-testing.js.ProxyZoneSpec.onInvoke node_modules/zone.js/dist/zone-testing.js:289:1)
+    at ZoneDelegate.webpackJsonp../node_modules/zone.js/dist/zone.js.ZoneDelegate.invoke node_modules/zone.js/dist/zone.js:390:1)
+    at Zone.webpackJsonp../node_modules/zone.js/dist/zone.js.Zone.run node_modules/zone.js/dist/zone.js:150:1)
+    at runInTestZone node_modules/zone.js/dist/zone-testing.js:510:1)
+    at UserContext.&lt;anonymous&gt; node_modules/zone.js/dist/zone-testing.js:525:1)
+</failure>
+  </testcase>
+  <testcase name="HeaderInterceptor should add an authorization header for getUserDetails method" time="0.01" classname="unit.HeaderInterceptor">
+    <failure type="">Error: Expected one matching request for criteria "Match URL: api/getProfile?uid=7ae2548c8ad985d89f8f9532", found none.
+    at HttpClientTestingBackend.webpackJsonp../node_modules/@angular/common/esm5/http/testing.js.HttpClientTestingBackend.expectOne node_modules/@angular/common/esm5/http/testing.js:419:1)
+    at UserContext.&lt;anonymous&gt; src/app/interceptors/headerInterceptor.spec.ts:64:34)
+    at ZoneDelegate.webpackJsonp../node_modules/zone.js/dist/zone.js.ZoneDelegate.invoke node_modules/zone.js/dist/zone.js:391:1)
+    at ProxyZoneSpec.webpackJsonp../node_modules/zone.js/dist/zone-testing.js.ProxyZoneSpec.onInvoke node_modules/zone.js/dist/zone-testing.js:289:1)
+    at ZoneDelegate.webpackJsonp../node_modules/zone.js/dist/zone.js.ZoneDelegate.invoke node_modules/zone.js/dist/zone.js:390:1)
+    at Zone.webpackJsonp../node_modules/zone.js/dist/zone.js.Zone.run node_modules/zone.js/dist/zone.js:150:1)
+    at runInTestZone node_modules/zone.js/dist/zone-testing.js:510:1)
+    at UserContext.&lt;anonymous&gt; node_modules/zone.js/dist/zone-testing.js:525:1)
+</failure>
+  </testcase>
+  <testcase name="HeaderInterceptor should add an authorization header for updateDetails method" time="0.009" classname="unit.HeaderInterceptor">
+    <failure type="">Error: Expected one matching request for criteria "Match URL: api/editProfile", found none.
+    at HttpClientTestingBackend.webpackJsonp../node_modules/@angular/common/esm5/http/testing.js.HttpClientTestingBackend.expectOne node_modules/@angular/common/esm5/http/testing.js:419:1)
+    at UserContext.&lt;anonymous&gt; src/app/interceptors/headerInterceptor.spec.ts:79:34)
+    at ZoneDelegate.webpackJsonp../node_modules/zone.js/dist/zone.js.ZoneDelegate.invoke node_modules/zone.js/dist/zone.js:391:1)
+    at ProxyZoneSpec.webpackJsonp../node_modules/zone.js/dist/zone-testing.js.ProxyZoneSpec.onInvoke node_modules/zone.js/dist/zone-testing.js:289:1)
+    at ZoneDelegate.webpackJsonp../node_modules/zone.js/dist/zone.js.ZoneDelegate.invoke node_modules/zone.js/dist/zone.js:390:1)
+    at Zone.webpackJsonp../node_modules/zone.js/dist/zone.js.Zone.run node_modules/zone.js/dist/zone.js:150:1)
+    at runInTestZone node_modules/zone.js/dist/zone-testing.js:510:1)
+    at UserContext.&lt;anonymous&gt; node_modules/zone.js/dist/zone-testing.js:525:1)
+</failure>
+  </testcase>
+  <testcase name="HeaderInterceptor should add an authorization header for registerPatient method" time="0.01" classname="unit.HeaderInterceptor">
+    <failure type="">Error: Expected one matching request for criteria "Match URL: api/addPatient", found none.
+    at HttpClientTestingBackend.webpackJsonp../node_modules/@angular/common/esm5/http/testing.js.HttpClientTestingBackend.expectOne node_modules/@angular/common/esm5/http/testing.js:419:1)
+    at UserContext.&lt;anonymous&gt; src/app/interceptors/headerInterceptor.spec.ts:98:34)
+    at ZoneDelegate.webpackJsonp../node_modules/zone.js/dist/zone.js.ZoneDelegate.invoke node_modules/zone.js/dist/zone.js:391:1)
+    at ProxyZoneSpec.webpackJsonp../node_modules/zone.js/dist/zone-testing.js.ProxyZoneSpec.onInvoke node_modules/zone.js/dist/zone-testing.js:289:1)
+    at ZoneDelegate.webpackJsonp../node_modules/zone.js/dist/zone.js.ZoneDelegate.invoke node_modules/zone.js/dist/zone.js:390:1)
+    at Zone.webpackJsonp../node_modules/zone.js/dist/zone.js.Zone.run node_modules/zone.js/dist/zone.js:150:1)
+    at runInTestZone node_modules/zone.js/dist/zone-testing.js:510:1)
+    at UserContext.&lt;anonymous&gt; node_modules/zone.js/dist/zone-testing.js:525:1)
+</failure>
+  </testcase>
+  <testcase name="HeaderInterceptor should add an authorization header for getAllPatientsList method" time="0.007" classname="unit.HeaderInterceptor">
+    <failure type="">Error: Expected one matching request for criteria "Match URL: api/fetchPatient", found none.
+    at HttpClientTestingBackend.webpackJsonp../node_modules/@angular/common/esm5/http/testing.js.HttpClientTestingBackend.expectOne node_modules/@angular/common/esm5/http/testing.js:419:1)
+    at UserContext.&lt;anonymous&gt; src/app/interceptors/headerInterceptor.spec.ts:107:34)
+    at ZoneDelegate.webpackJsonp../node_modules/zone.js/dist/zone.js.ZoneDelegate.invoke node_modules/zone.js/dist/zone.js:391:1)
+    at ProxyZoneSpec.webpackJsonp../node_modules/zone.js/dist/zone-testing.js.ProxyZoneSpec.onInvoke node_modules/zone.js/dist/zone-testing.js:289:1)
+    at ZoneDelegate.webpackJsonp../node_modules/zone.js/dist/zone.js.ZoneDelegate.invoke node_modules/zone.js/dist/zone.js:390:1)
+    at Zone.webpackJsonp../node_modules/zone.js/dist/zone.js.Zone.run node_modules/zone.js/dist/zone.js:150:1)
+    at runInTestZone node_modules/zone.js/dist/zone-testing.js:510:1)
+    at UserContext.&lt;anonymous&gt; node_modules/zone.js/dist/zone-testing.js:525:1)
+</failure>
+  </testcase>
+  <testcase name="HeaderInterceptor should add an authorization header for getParticularPatient method" time="0.01" classname="unit.HeaderInterceptor">
+    <failure type="">Error: Expected one matching request for criteria "Match URL: api/fetchSinglePatient?patientId=7ae2548c8ad985d89f8f9532", found none.
+    at HttpClientTestingBackend.webpackJsonp../node_modules/@angular/common/esm5/http/testing.js.HttpClientTestingBackend.expectOne node_modules/@angular/common/esm5/http/testing.js:419:1)
+    at UserContext.&lt;anonymous&gt; src/app/interceptors/headerInterceptor.spec.ts:117:34)
+    at ZoneDelegate.webpackJsonp../node_modules/zone.js/dist/zone.js.ZoneDelegate.invoke node_modules/zone.js/dist/zone.js:391:1)
+    at ProxyZoneSpec.webpackJsonp../node_modules/zone.js/dist/zone-testing.js.ProxyZoneSpec.onInvoke node_modules/zone.js/dist/zone-testing.js:289:1)
+    at ZoneDelegate.webpackJsonp../node_modules/zone.js/dist/zone.js.ZoneDelegate.invoke node_modules/zone.js/dist/zone.js:390:1)
+    at Zone.webpackJsonp../node_modules/zone.js/dist/zone.js.Zone.run node_modules/zone.js/dist/zone.js:150:1)
+    at runInTestZone node_modules/zone.js/dist/zone-testing.js:510:1)
+    at UserContext.&lt;anonymous&gt; node_modules/zone.js/dist/zone-testing.js:525:1)
+</failure>
+  </testcase>
+  <testcase name="HeaderInterceptor should add an authorization header for diseasesList method" time="0.007" classname="unit.HeaderInterceptor">
+    <failure type="">Error: Expected one matching request for criteria "Match URL: api/diseases", found none.
+    at HttpClientTestingBackend.webpackJsonp../node_modules/@angular/common/esm5/http/testing.js.HttpClientTestingBackend.expectOne node_modules/@angular/common/esm5/http/testing.js:419:1)
+    at UserContext.&lt;anonymous&gt; src/app/interceptors/headerInterceptor.spec.ts:126:34)
+    at ZoneDelegate.webpackJsonp../node_modules/zone.js/dist/zone.js.ZoneDelegate.invoke node_modules/zone.js/dist/zone.js:391:1)
+    at ProxyZoneSpec.webpackJsonp../node_modules/zone.js/dist/zone-testing.js.ProxyZoneSpec.onInvoke node_modules/zone.js/dist/zone-testing.js:289:1)
+    at ZoneDelegate.webpackJsonp../node_modules/zone.js/dist/zone.js.ZoneDelegate.invoke node_modules/zone.js/dist/zone.js:390:1)
+    at Zone.webpackJsonp../node_modules/zone.js/dist/zone.js.Zone.run node_modules/zone.js/dist/zone.js:150:1)
+    at runInTestZone node_modules/zone.js/dist/zone-testing.js:510:1)
+    at UserContext.&lt;anonymous&gt; node_modules/zone.js/dist/zone-testing.js:525:1)
+</failure>
+  </testcase>
+  <testcase name="HeaderInterceptor should add an authorization header for scheduleAppointment method" time="0.008" classname="unit.HeaderInterceptor">
+    <failure type="">Error: Expected one matching request for criteria "Match URL: api/bookAppointment", found none.
+    at HttpClientTestingBackend.webpackJsonp../node_modules/@angular/common/esm5/http/testing.js.HttpClientTestingBackend.expectOne node_modules/@angular/common/esm5/http/testing.js:419:1)
+    at UserContext.&lt;anonymous&gt; src/app/interceptors/headerInterceptor.spec.ts:144:34)
+    at ZoneDelegate.webpackJsonp../node_modules/zone.js/dist/zone.js.ZoneDelegate.invoke node_modules/zone.js/dist/zone.js:391:1)
+    at ProxyZoneSpec.webpackJsonp../node_modules/zone.js/dist/zone-testing.js.ProxyZoneSpec.onInvoke node_modules/zone.js/dist/zone-testing.js:289:1)
+    at ZoneDelegate.webpackJsonp../node_modules/zone.js/dist/zone.js.ZoneDelegate.invoke node_modules/zone.js/dist/zone.js:390:1)
+    at Zone.webpackJsonp../node_modules/zone.js/dist/zone.js.Zone.run node_modules/zone.js/dist/zone.js:150:1)
+    at runInTestZone node_modules/zone.js/dist/zone-testing.js:510:1)
+    at UserContext.&lt;anonymous&gt; node_modules/zone.js/dist/zone-testing.js:525:1)
+</failure>
+  </testcase>
+  <testcase name="HeaderInterceptor should add an authorization header for getSinglePatientAppointments method" time="0.007" classname="unit.HeaderInterceptor">
+    <failure type="">Error: Expected one matching request for criteria "Match URL: api/singlePatientAppointments?patientId=7ae2548c8ad98jhu8sd89532", found none.
+    at HttpClientTestingBackend.webpackJsonp../node_modules/@angular/common/esm5/http/testing.js.HttpClientTestingBackend.expectOne node_modules/@angular/common/esm5/http/testing.js:419:1)
+    at UserContext.&lt;anonymous&gt; src/app/interceptors/headerInterceptor.spec.ts:154:34)
+    at ZoneDelegate.webpackJsonp../node_modules/zone.js/dist/zone.js.ZoneDelegate.invoke node_modules/zone.js/dist/zone.js:391:1)
+    at ProxyZoneSpec.webpackJsonp../node_modules/zone.js/dist/zone-testing.js.ProxyZoneSpec.onInvoke node_modules/zone.js/dist/zone-testing.js:289:1)
+    at ZoneDelegate.webpackJsonp../node_modules/zone.js/dist/zone.js.ZoneDelegate.invoke node_modules/zone.js/dist/zone.js:390:1)
+    at Zone.webpackJsonp../node_modules/zone.js/dist/zone.js.Zone.run node_modules/zone.js/dist/zone.js:150:1)
+    at runInTestZone node_modules/zone.js/dist/zone-testing.js:510:1)
+    at UserContext.&lt;anonymous&gt; node_modules/zone.js/dist/zone-testing.js:525:1)
+</failure>
+  </testcase>
+  <testcase name="HeaderInterceptor should add an authorization header for deleteAppointment method" time="0.013" classname="unit.HeaderInterceptor">
+    <failure type="">Error: Expected one matching request for criteria "Match URL: api/deleteAppointment?appointmentId=7ae2548c8ai8g53q8sd89532", found none.
+    at HttpClientTestingBackend.webpackJsonp../node_modules/@angular/common/esm5/http/testing.js.HttpClientTestingBackend.expectOne node_modules/@angular/common/esm5/http/testing.js:419:1)
+    at UserContext.&lt;anonymous&gt; src/app/interceptors/headerInterceptor.spec.ts:164:34)
+    at ZoneDelegate.webpackJsonp../node_modules/zone.js/dist/zone.js.ZoneDelegate.invoke node_modules/zone.js/dist/zone.js:391:1)
+    at ProxyZoneSpec.webpackJsonp../node_modules/zone.js/dist/zone-testing.js.ProxyZoneSpec.onInvoke node_modules/zone.js/dist/zone-testing.js:289:1)
+    at ZoneDelegate.webpackJsonp../node_modules/zone.js/dist/zone.js.ZoneDelegate.invoke node_modules/zone.js/dist/zone.js:390:1)
+    at Zone.webpackJsonp../node_modules/zone.js/dist/zone.js.Zone.run node_modules/zone.js/dist/zone.js:150:1)
+    at runInTestZone node_modules/zone.js/dist/zone-testing.js:510:1)
+    at UserContext.&lt;anonymous&gt; node_modules/zone.js/dist/zone-testing.js:525:1)
+</failure>
+  </testcase>
+  <testcase name="HeaderInterceptor should add an authorization header for requestedAppointments method" time="0.009" classname="unit.HeaderInterceptor">
+    <failure type="">Error: Expected one matching request for criteria "Match URL: api/fetchAppointment", found none.
+    at HttpClientTestingBackend.webpackJsonp../node_modules/@angular/common/esm5/http/testing.js.HttpClientTestingBackend.expectOne node_modules/@angular/common/esm5/http/testing.js:419:1)
+    at UserContext.&lt;anonymous&gt; src/app/interceptors/headerInterceptor.spec.ts:173:34)
+    at ZoneDelegate.webpackJsonp../node_modules/zone.js/dist/zone.js.ZoneDelegate.invoke node_modules/zone.js/dist/zone.js:391:1)
+    at ProxyZoneSpec.webpackJsonp../node_modules/zone.js/dist/zone-testing.js.ProxyZoneSpec.onInvoke node_modules/zone.js/dist/zone-testing.js:289:1)
+    at ZoneDelegate.webpackJsonp../node_modules/zone.js/dist/zone.js.ZoneDelegate.invoke node_modules/zone.js/dist/zone.js:390:1)
+    at Zone.webpackJsonp../node_modules/zone.js/dist/zone.js.Zone.run node_modules/zone.js/dist/zone.js:150:1)
+    at runInTestZone node_modules/zone.js/dist/zone-testing.js:510:1)
+    at UserContext.&lt;anonymous&gt; node_modules/zone.js/dist/zone-testing.js:525:1)
+</failure>
+  </testcase>
+  <testcase name="ApiService login should send user credentials in post request body" time="0.008" classname="unit.ApiService">
+    <failure type="">Error: Expected one matching request for criteria "Match method: POST, URL: http://localhost:8000/login", found none.
+    at HttpClientTestingBackend.webpackJsonp../node_modules/@angular/common/esm5/http/testing.js.HttpClientTestingBackend.expectOne node_modules/@angular/common/esm5/http/testing.js:419:1)
+    at UserContext.&lt;anonymous&gt; src/app/services/api.service.spec.ts:157:35)
+    at ZoneDelegate.webpackJsonp../node_modules/zone.js/dist/zone.js.ZoneDelegate.invoke node_modules/zone.js/dist/zone.js:391:1)
+    at ProxyZoneSpec.webpackJsonp../node_modules/zone.js/dist/zone-testing.js.ProxyZoneSpec.onInvoke node_modules/zone.js/dist/zone-testing.js:289:1)
+    at ZoneDelegate.webpackJsonp../node_modules/zone.js/dist/zone.js.ZoneDelegate.invoke node_modules/zone.js/dist/zone.js:390:1)
+    at Zone.webpackJsonp../node_modules/zone.js/dist/zone.js.Zone.run node_modules/zone.js/dist/zone.js:150:1)
+    at runInTestZone node_modules/zone.js/dist/zone-testing.js:507:1)
+    at UserContext.&lt;anonymous&gt; node_modules/zone.js/dist/zone-testing.js:523:1)
+</failure>
+  </testcase>
+  <testcase name="ApiService login should return user details if auth success" time="0.008" classname="unit.ApiService">
+    <failure type="">Error: Expected one matching request for criteria "Match method: POST, URL: http://localhost:8000/login", found none.
+    at HttpClientTestingBackend.webpackJsonp../node_modules/@angular/common/esm5/http/testing.js.HttpClientTestingBackend.expectOne node_modules/@angular/common/esm5/http/testing.js:419:1)
+    at UserContext.&lt;anonymous&gt; src/app/services/api.service.spec.ts:174:35)
+    at ZoneDelegate.webpackJsonp../node_modules/zone.js/dist/zone.js.ZoneDelegate.invoke node_modules/zone.js/dist/zone.js:391:1)
+    at ProxyZoneSpec.webpackJsonp../node_modules/zone.js/dist/zone-testing.js.ProxyZoneSpec.onInvoke node_modules/zone.js/dist/zone-testing.js:289:1)
+    at ZoneDelegate.webpackJsonp../node_modules/zone.js/dist/zone.js.ZoneDelegate.invoke node_modules/zone.js/dist/zone.js:390:1)
+    at Zone.webpackJsonp../node_modules/zone.js/dist/zone.js.Zone.run node_modules/zone.js/dist/zone.js:150:1)
+    at runInTestZone node_modules/zone.js/dist/zone-testing.js:507:1)
+    at UserContext.&lt;anonymous&gt; node_modules/zone.js/dist/zone-testing.js:523:1)
+</failure>
+  </testcase>
+  <testcase name="ApiService login should return error message if auth fails" time="0.006" classname="unit.ApiService">
+    <failure type="">Error: Expected one matching request for criteria "Match method: POST, URL: http://localhost:8000/login", found none.
+    at HttpClientTestingBackend.webpackJsonp../node_modules/@angular/common/esm5/http/testing.js.HttpClientTestingBackend.expectOne node_modules/@angular/common/esm5/http/testing.js:419:1)
+    at UserContext.&lt;anonymous&gt; src/app/services/api.service.spec.ts:190:35)
+    at ZoneDelegate.webpackJsonp../node_modules/zone.js/dist/zone.js.ZoneDelegate.invoke node_modules/zone.js/dist/zone.js:391:1)
+    at ProxyZoneSpec.webpackJsonp../node_modules/zone.js/dist/zone-testing.js.ProxyZoneSpec.onInvoke node_modules/zone.js/dist/zone-testing.js:289:1)
+    at ZoneDelegate.webpackJsonp../node_modules/zone.js/dist/zone.js.ZoneDelegate.invoke node_modules/zone.js/dist/zone.js:390:1)
+    at Zone.webpackJsonp../node_modules/zone.js/dist/zone.js.Zone.run node_modules/zone.js/dist/zone.js:150:1)
+    at runInTestZone node_modules/zone.js/dist/zone-testing.js:507:1)
+    at UserContext.&lt;anonymous&gt; node_modules/zone.js/dist/zone-testing.js:523:1)
+</failure>
+  </testcase>
+  <testcase name="ApiService regNewUser should return status as success if new user registered successfully" time="0.006" classname="unit.ApiService">
+    <failure type="">Error: Expected one matching request for criteria "Match method: POST, URL: http://localhost:8000/register", found none.
+    at HttpClientTestingBackend.webpackJsonp../node_modules/@angular/common/esm5/http/testing.js.HttpClientTestingBackend.expectOne node_modules/@angular/common/esm5/http/testing.js:419:1)
+    at UserContext.&lt;anonymous&gt; src/app/services/api.service.spec.ts:213:33)
+    at ZoneDelegate.webpackJsonp../node_modules/zone.js/dist/zone.js.ZoneDelegate.invoke node_modules/zone.js/dist/zone.js:391:1)
+    at ProxyZoneSpec.webpackJsonp../node_modules/zone.js/dist/zone-testing.js.ProxyZoneSpec.onInvoke node_modules/zone.js/dist/zone-testing.js:289:1)
+    at ZoneDelegate.webpackJsonp../node_modules/zone.js/dist/zone.js.ZoneDelegate.invoke node_modules/zone.js/dist/zone.js:390:1)
+    at Zone.webpackJsonp../node_modules/zone.js/dist/zone.js.Zone.run node_modules/zone.js/dist/zone.js:150:1)
+    at runInTestZone node_modules/zone.js/dist/zone-testing.js:507:1)
+    at UserContext.&lt;anonymous&gt; node_modules/zone.js/dist/zone-testing.js:523:1)
+</failure>
+  </testcase>
+  <testcase name="ApiService regNewUser should return status as failed if new user is not registered(username or email is already exists) " time="0.009" classname="unit.ApiService">
+    <failure type="">Error: Expected one matching request for criteria "Match method: POST, URL: http://localhost:8000/register", found none.
+    at HttpClientTestingBackend.webpackJsonp../node_modules/@angular/common/esm5/http/testing.js.HttpClientTestingBackend.expectOne node_modules/@angular/common/esm5/http/testing.js:419:1)
+    at UserContext.&lt;anonymous&gt; src/app/services/api.service.spec.ts:236:33)
+    at ZoneDelegate.webpackJsonp../node_modules/zone.js/dist/zone.js.ZoneDelegate.invoke node_modules/zone.js/dist/zone.js:391:1)
+    at ProxyZoneSpec.webpackJsonp../node_modules/zone.js/dist/zone-testing.js.ProxyZoneSpec.onInvoke node_modules/zone.js/dist/zone-testing.js:289:1)
+    at ZoneDelegate.webpackJsonp../node_modules/zone.js/dist/zone.js.ZoneDelegate.invoke node_modules/zone.js/dist/zone.js:390:1)
+    at Zone.webpackJsonp../node_modules/zone.js/dist/zone.js.Zone.run node_modules/zone.js/dist/zone.js:150:1)
+    at runInTestZone node_modules/zone.js/dist/zone-testing.js:507:1)
+    at UserContext.&lt;anonymous&gt; node_modules/zone.js/dist/zone-testing.js:523:1)
+</failure>
+  </testcase>
+  <testcase name="ApiService getUserDetails should return user details" time="0.006" classname="unit.ApiService">
+    <failure type="">Error: Expected one matching request for criteria "Match by function: ", found none.
+    at HttpClientTestingBackend.webpackJsonp../node_modules/@angular/common/esm5/http/testing.js.HttpClientTestingBackend.expectOne node_modules/@angular/common/esm5/http/testing.js:419:1)
+    at UserContext.&lt;anonymous&gt; src/app/services/api.service.spec.ts:251:40)
+    at ZoneDelegate.webpackJsonp../node_modules/zone.js/dist/zone.js.ZoneDelegate.invoke node_modules/zone.js/dist/zone.js:391:1)
+    at ProxyZoneSpec.webpackJsonp../node_modules/zone.js/dist/zone-testing.js.ProxyZoneSpec.onInvoke node_modules/zone.js/dist/zone-testing.js:289:1)
+    at ZoneDelegate.webpackJsonp../node_modules/zone.js/dist/zone.js.ZoneDelegate.invoke node_modules/zone.js/dist/zone.js:390:1)
+    at Zone.webpackJsonp../node_modules/zone.js/dist/zone.js.Zone.run node_modules/zone.js/dist/zone.js:150:1)
+    at runInTestZone node_modules/zone.js/dist/zone-testing.js:507:1)
+    at UserContext.&lt;anonymous&gt; node_modules/zone.js/dist/zone-testing.js:523:1)
+</failure>
+  </testcase>
+  <testcase name="ApiService getUserDetails should return false status if userId is not valid" time="0.008" classname="unit.ApiService">
+    <failure type="">Error: Expected one matching request for criteria "Match method: Get, URL: http://localhost:8000/getProfile?uid=7ae2548c8ad985", found none.
+    at HttpClientTestingBackend.webpackJsonp../node_modules/@angular/common/esm5/http/testing.js.HttpClientTestingBackend.expectOne node_modules/@angular/common/esm5/http/testing.js:419:1)
+    at UserContext.&lt;anonymous&gt; src/app/services/api.service.spec.ts:268:33)
+    at ZoneDelegate.webpackJsonp../node_modules/zone.js/dist/zone.js.ZoneDelegate.invoke node_modules/zone.js/dist/zone.js:391:1)
+    at ProxyZoneSpec.webpackJsonp../node_modules/zone.js/dist/zone-testing.js.ProxyZoneSpec.onInvoke node_modules/zone.js/dist/zone-testing.js:289:1)
+    at ZoneDelegate.webpackJsonp../node_modules/zone.js/dist/zone.js.ZoneDelegate.invoke node_modules/zone.js/dist/zone.js:390:1)
+    at Zone.webpackJsonp../node_modules/zone.js/dist/zone.js.Zone.run node_modules/zone.js/dist/zone.js:150:1)
+    at runInTestZone node_modules/zone.js/dist/zone-testing.js:507:1)
+    at UserContext.&lt;anonymous&gt; node_modules/zone.js/dist/zone-testing.js:523:1)
+</failure>
+  </testcase>
+  <testcase name="ApiService updateDetails should return new user details after submitting the update" time="0.01" classname="unit.ApiService">
+    <failure type="">Error: Expected one matching request for criteria "Match method: PUT, URL: http://localhost:8000/editProfile", found none.
+    at HttpClientTestingBackend.webpackJsonp../node_modules/@angular/common/esm5/http/testing.js.HttpClientTestingBackend.expectOne node_modules/@angular/common/esm5/http/testing.js:419:1)
+    at UserContext.&lt;anonymous&gt; src/app/services/api.service.spec.ts:288:43)
+    at ZoneDelegate.webpackJsonp../node_modules/zone.js/dist/zone.js.ZoneDelegate.invoke node_modules/zone.js/dist/zone.js:391:1)
+    at ProxyZoneSpec.webpackJsonp../node_modules/zone.js/dist/zone-testing.js.ProxyZoneSpec.onInvoke node_modules/zone.js/dist/zone-testing.js:289:1)
+    at ZoneDelegate.webpackJsonp../node_modules/zone.js/dist/zone.js.ZoneDelegate.invoke node_modules/zone.js/dist/zone.js:390:1)
+    at Zone.webpackJsonp../node_modules/zone.js/dist/zone.js.Zone.run node_modules/zone.js/dist/zone.js:150:1)
+    at runInTestZone node_modules/zone.js/dist/zone-testing.js:507:1)
+    at UserContext.&lt;anonymous&gt; node_modules/zone.js/dist/zone-testing.js:523:1)
+</failure>
+  </testcase>
+  <testcase name="ApiService updateDetails should return status 500 if user details not updated" time="0.008" classname="unit.ApiService">
+    <failure type="">Error: Expected one matching request for criteria "Match method: PUT, URL: http://localhost:8000/editProfile", found none.
+    at HttpClientTestingBackend.webpackJsonp../node_modules/@angular/common/esm5/http/testing.js.HttpClientTestingBackend.expectOne node_modules/@angular/common/esm5/http/testing.js:419:1)
+    at UserContext.&lt;anonymous&gt; src/app/services/api.service.spec.ts:310:43)
+    at ZoneDelegate.webpackJsonp../node_modules/zone.js/dist/zone.js.ZoneDelegate.invoke node_modules/zone.js/dist/zone.js:391:1)
+    at ProxyZoneSpec.webpackJsonp../node_modules/zone.js/dist/zone-testing.js.ProxyZoneSpec.onInvoke node_modules/zone.js/dist/zone-testing.js:289:1)
+    at ZoneDelegate.webpackJsonp../node_modules/zone.js/dist/zone.js.ZoneDelegate.invoke node_modules/zone.js/dist/zone.js:390:1)
+    at Zone.webpackJsonp../node_modules/zone.js/dist/zone.js.Zone.run node_modules/zone.js/dist/zone.js:150:1)
+    at runInTestZone node_modules/zone.js/dist/zone-testing.js:507:1)
+    at UserContext.&lt;anonymous&gt; node_modules/zone.js/dist/zone-testing.js:523:1)
+</failure>
+  </testcase>
+  <testcase name="ApiService registerPatient should add patient details in post request body" time="0.008" classname="unit.ApiService">
+    <failure type="">Error: Expected one matching request for criteria "Match method: POST, URL: http://localhost:8000/addPatient", found none.
+    at HttpClientTestingBackend.webpackJsonp../node_modules/@angular/common/esm5/http/testing.js.HttpClientTestingBackend.expectOne node_modules/@angular/common/esm5/http/testing.js:419:1)
+    at UserContext.&lt;anonymous&gt; src/app/services/api.service.spec.ts:339:38)
+    at ZoneDelegate.webpackJsonp../node_modules/zone.js/dist/zone.js.ZoneDelegate.invoke node_modules/zone.js/dist/zone.js:391:1)
+    at ProxyZoneSpec.webpackJsonp../node_modules/zone.js/dist/zone-testing.js.ProxyZoneSpec.onInvoke node_modules/zone.js/dist/zone-testing.js:289:1)
+    at ZoneDelegate.webpackJsonp../node_modules/zone.js/dist/zone.js.ZoneDelegate.invoke node_modules/zone.js/dist/zone.js:390:1)
+    at Zone.webpackJsonp../node_modules/zone.js/dist/zone.js.Zone.run node_modules/zone.js/dist/zone.js:150:1)
+    at runInTestZone node_modules/zone.js/dist/zone-testing.js:507:1)
+    at UserContext.&lt;anonymous&gt; node_modules/zone.js/dist/zone-testing.js:523:1)
+</failure>
+  </testcase>
+  <testcase name="ApiService registerPatient should return success if POST method success" time="0.011" classname="unit.ApiService">
+    <failure type="">Error: Expected one matching request for criteria "Match method: POST, URL: http://localhost:8000/addPatient", found none.
+    at HttpClientTestingBackend.webpackJsonp../node_modules/@angular/common/esm5/http/testing.js.HttpClientTestingBackend.expectOne node_modules/@angular/common/esm5/http/testing.js:419:1)
+    at UserContext.&lt;anonymous&gt; src/app/services/api.service.spec.ts:368:38)
+    at ZoneDelegate.webpackJsonp../node_modules/zone.js/dist/zone.js.ZoneDelegate.invoke node_modules/zone.js/dist/zone.js:391:1)
+    at ProxyZoneSpec.webpackJsonp../node_modules/zone.js/dist/zone-testing.js.ProxyZoneSpec.onInvoke node_modules/zone.js/dist/zone-testing.js:289:1)
+    at ZoneDelegate.webpackJsonp../node_modules/zone.js/dist/zone.js.ZoneDelegate.invoke node_modules/zone.js/dist/zone.js:390:1)
+    at Zone.webpackJsonp../node_modules/zone.js/dist/zone.js.Zone.run node_modules/zone.js/dist/zone.js:150:1)
+    at runInTestZone node_modules/zone.js/dist/zone-testing.js:507:1)
+    at UserContext.&lt;anonymous&gt; node_modules/zone.js/dist/zone-testing.js:523:1)
+</failure>
+  </testcase>
+  <testcase name="ApiService getAllPatientsList should return all patient details" time="0.01" classname="unit.ApiService">
+    <failure type="">Error: Expected one matching request for criteria "Match by function: ", found none.
+    at HttpClientTestingBackend.webpackJsonp../node_modules/@angular/common/esm5/http/testing.js.HttpClientTestingBackend.expectOne node_modules/@angular/common/esm5/http/testing.js:419:1)
+    at UserContext.&lt;anonymous&gt; src/app/services/api.service.spec.ts:380:38)
+    at ZoneDelegate.webpackJsonp../node_modules/zone.js/dist/zone.js.ZoneDelegate.invoke node_modules/zone.js/dist/zone.js:391:1)
+    at ProxyZoneSpec.webpackJsonp../node_modules/zone.js/dist/zone-testing.js.ProxyZoneSpec.onInvoke node_modules/zone.js/dist/zone-testing.js:289:1)
+    at ZoneDelegate.webpackJsonp../node_modules/zone.js/dist/zone.js.ZoneDelegate.invoke node_modules/zone.js/dist/zone.js:390:1)
+    at Zone.webpackJsonp../node_modules/zone.js/dist/zone.js.Zone.run node_modules/zone.js/dist/zone.js:150:1)
+    at runInTestZone node_modules/zone.js/dist/zone-testing.js:507:1)
+    at UserContext.&lt;anonymous&gt; node_modules/zone.js/dist/zone-testing.js:523:1)
+</failure>
+  </testcase>
+  <testcase name="ApiService getParticularPatient should return particular patient details" time="0.006" classname="unit.ApiService">
+    <failure type="">Error: Expected one matching request for criteria "Match by function: ", found none.
+    at HttpClientTestingBackend.webpackJsonp../node_modules/@angular/common/esm5/http/testing.js.HttpClientTestingBackend.expectOne node_modules/@angular/common/esm5/http/testing.js:419:1)
+    at UserContext.&lt;anonymous&gt; src/app/services/api.service.spec.ts:396:38)
+    at ZoneDelegate.webpackJsonp../node_modules/zone.js/dist/zone.js.ZoneDelegate.invoke node_modules/zone.js/dist/zone.js:391:1)
+    at ProxyZoneSpec.webpackJsonp../node_modules/zone.js/dist/zone-testing.js.ProxyZoneSpec.onInvoke node_modules/zone.js/dist/zone-testing.js:289:1)
+    at ZoneDelegate.webpackJsonp../node_modules/zone.js/dist/zone.js.ZoneDelegate.invoke node_modules/zone.js/dist/zone.js:390:1)
+    at Zone.webpackJsonp../node_modules/zone.js/dist/zone.js.Zone.run node_modules/zone.js/dist/zone.js:150:1)
+    at runInTestZone node_modules/zone.js/dist/zone-testing.js:507:1)
+    at UserContext.&lt;anonymous&gt; node_modules/zone.js/dist/zone-testing.js:523:1)
+</failure>
+  </testcase>
+  <testcase name="ApiService diseasesList should return the list of diseases" time="0.009" classname="unit.ApiService">
+    <failure type="">Error: Expected one matching request for criteria "Match by function: ", found none.
+    at HttpClientTestingBackend.webpackJsonp../node_modules/@angular/common/esm5/http/testing.js.HttpClientTestingBackend.expectOne node_modules/@angular/common/esm5/http/testing.js:419:1)
+    at UserContext.&lt;anonymous&gt; src/app/services/api.service.spec.ts:412:38)
+    at ZoneDelegate.webpackJsonp../node_modules/zone.js/dist/zone.js.ZoneDelegate.invoke node_modules/zone.js/dist/zone.js:391:1)
+    at ProxyZoneSpec.webpackJsonp../node_modules/zone.js/dist/zone-testing.js.ProxyZoneSpec.onInvoke node_modules/zone.js/dist/zone-testing.js:289:1)
+    at ZoneDelegate.webpackJsonp../node_modules/zone.js/dist/zone.js.ZoneDelegate.invoke node_modules/zone.js/dist/zone.js:390:1)
+    at Zone.webpackJsonp../node_modules/zone.js/dist/zone.js.Zone.run node_modules/zone.js/dist/zone.js:150:1)
+    at runInTestZone node_modules/zone.js/dist/zone-testing.js:507:1)
+    at UserContext.&lt;anonymous&gt; node_modules/zone.js/dist/zone-testing.js:523:1)
+</failure>
+  </testcase>
+  <testcase name="ApiService scheduleAppointment should add appointment details in post request body" time="0.006" classname="unit.ApiService">
+    <failure type="">Error: Expected one matching request for criteria "Match method: POST, URL: http://localhost:8000/bookAppointment", found none.
+    at HttpClientTestingBackend.webpackJsonp../node_modules/@angular/common/esm5/http/testing.js.HttpClientTestingBackend.expectOne node_modules/@angular/common/esm5/http/testing.js:419:1)
+    at UserContext.&lt;anonymous&gt; src/app/services/api.service.spec.ts:425:38)
+    at ZoneDelegate.webpackJsonp../node_modules/zone.js/dist/zone.js.ZoneDelegate.invoke node_modules/zone.js/dist/zone.js:391:1)
+    at ProxyZoneSpec.webpackJsonp../node_modules/zone.js/dist/zone-testing.js.ProxyZoneSpec.onInvoke node_modules/zone.js/dist/zone-testing.js:289:1)
+    at ZoneDelegate.webpackJsonp../node_modules/zone.js/dist/zone.js.ZoneDelegate.invoke node_modules/zone.js/dist/zone.js:390:1)
+    at Zone.webpackJsonp../node_modules/zone.js/dist/zone.js.Zone.run node_modules/zone.js/dist/zone.js:150:1)
+    at runInTestZone node_modules/zone.js/dist/zone-testing.js:507:1)
+    at UserContext.&lt;anonymous&gt; node_modules/zone.js/dist/zone-testing.js:523:1)
+</failure>
+  </testcase>
+  <testcase name="ApiService scheduleAppointment should return success message if POST method success" time="0.006" classname="unit.ApiService">
+    <failure type="">Error: Expected one matching request for criteria "Match method: POST, URL: http://localhost:8000/bookAppointment", found none.
+    at HttpClientTestingBackend.webpackJsonp../node_modules/@angular/common/esm5/http/testing.js.HttpClientTestingBackend.expectOne node_modules/@angular/common/esm5/http/testing.js:419:1)
+    at UserContext.&lt;anonymous&gt; src/app/services/api.service.spec.ts:443:38)
+    at ZoneDelegate.webpackJsonp../node_modules/zone.js/dist/zone.js.ZoneDelegate.invoke node_modules/zone.js/dist/zone.js:391:1)
+    at ProxyZoneSpec.webpackJsonp../node_modules/zone.js/dist/zone-testing.js.ProxyZoneSpec.onInvoke node_modules/zone.js/dist/zone-testing.js:289:1)
+    at ZoneDelegate.webpackJsonp../node_modules/zone.js/dist/zone.js.ZoneDelegate.invoke node_modules/zone.js/dist/zone.js:390:1)
+    at Zone.webpackJsonp../node_modules/zone.js/dist/zone.js.Zone.run node_modules/zone.js/dist/zone.js:150:1)
+    at runInTestZone node_modules/zone.js/dist/zone-testing.js:507:1)
+    at UserContext.&lt;anonymous&gt; node_modules/zone.js/dist/zone-testing.js:523:1)
+</failure>
+  </testcase>
+  <testcase name="ApiService getSinglePatientAppointments should return requested appointments of particular patient" time="0.012" classname="unit.ApiService">
+    <failure type="">Error: Expected one matching request for criteria "Match by function: ", found none.
+    at HttpClientTestingBackend.webpackJsonp../node_modules/@angular/common/esm5/http/testing.js.HttpClientTestingBackend.expectOne node_modules/@angular/common/esm5/http/testing.js:419:1)
+    at UserContext.&lt;anonymous&gt; src/app/services/api.service.spec.ts:457:38)
+    at ZoneDelegate.webpackJsonp../node_modules/zone.js/dist/zone.js.ZoneDelegate.invoke node_modules/zone.js/dist/zone.js:391:1)
+    at ProxyZoneSpec.webpackJsonp../node_modules/zone.js/dist/zone-testing.js.ProxyZoneSpec.onInvoke node_modules/zone.js/dist/zone-testing.js:289:1)
+    at ZoneDelegate.webpackJsonp../node_modules/zone.js/dist/zone.js.ZoneDelegate.invoke node_modules/zone.js/dist/zone.js:390:1)
+    at Zone.webpackJsonp../node_modules/zone.js/dist/zone.js.Zone.run node_modules/zone.js/dist/zone.js:150:1)
+    at runInTestZone node_modules/zone.js/dist/zone-testing.js:507:1)
+    at UserContext.&lt;anonymous&gt; node_modules/zone.js/dist/zone-testing.js:523:1)
+</failure>
+  </testcase>
+  <testcase name="ApiService deleteAppointment should return success status if appointment deleted" time="0.005" classname="unit.ApiService">
+    <failure type="">Error: Expected one matching request for criteria "Match by function: ", found none.
+    at HttpClientTestingBackend.webpackJsonp../node_modules/@angular/common/esm5/http/testing.js.HttpClientTestingBackend.expectOne node_modules/@angular/common/esm5/http/testing.js:419:1)
+    at UserContext.&lt;anonymous&gt; src/app/services/api.service.spec.ts:475:38)
+    at ZoneDelegate.webpackJsonp../node_modules/zone.js/dist/zone.js.ZoneDelegate.invoke node_modules/zone.js/dist/zone.js:391:1)
+    at ProxyZoneSpec.webpackJsonp../node_modules/zone.js/dist/zone-testing.js.ProxyZoneSpec.onInvoke node_modules/zone.js/dist/zone-testing.js:289:1)
+    at ZoneDelegate.webpackJsonp../node_modules/zone.js/dist/zone.js.ZoneDelegate.invoke node_modules/zone.js/dist/zone.js:390:1)
+    at Zone.webpackJsonp../node_modules/zone.js/dist/zone.js.Zone.run node_modules/zone.js/dist/zone.js:150:1)
+    at runInTestZone node_modules/zone.js/dist/zone-testing.js:507:1)
+    at UserContext.&lt;anonymous&gt; node_modules/zone.js/dist/zone-testing.js:523:1)
+</failure>
+  </testcase>
+  <testcase name="ApiService requestedAppointments should return all appointments requested by all patients" time="0.007" classname="unit.ApiService">
+    <failure type="">Error: Expected one matching request for criteria "Match by function: ", found none.
+    at HttpClientTestingBackend.webpackJsonp../node_modules/@angular/common/esm5/http/testing.js.HttpClientTestingBackend.expectOne node_modules/@angular/common/esm5/http/testing.js:419:1)
+    at UserContext.&lt;anonymous&gt; src/app/services/api.service.spec.ts:489:38)
+    at ZoneDelegate.webpackJsonp../node_modules/zone.js/dist/zone.js.ZoneDelegate.invoke node_modules/zone.js/dist/zone.js:391:1)
+    at ProxyZoneSpec.webpackJsonp../node_modules/zone.js/dist/zone-testing.js.ProxyZoneSpec.onInvoke node_modules/zone.js/dist/zone-testing.js:289:1)
+    at ZoneDelegate.webpackJsonp../node_modules/zone.js/dist/zone.js.ZoneDelegate.invoke node_modules/zone.js/dist/zone.js:390:1)
+    at Zone.webpackJsonp../node_modules/zone.js/dist/zone.js.Zone.run node_modules/zone.js/dist/zone.js:150:1)
+    at runInTestZone node_modules/zone.js/dist/zone-testing.js:507:1)
+    at UserContext.&lt;anonymous&gt; node_modules/zone.js/dist/zone-testing.js:523:1)
+</failure>
+  </testcase>
+  <testcase name="AuthGuardService #canActivate should return true for logged in users" time="0.431" classname="unit.AuthGuardService"/>
+  <testcase name="AuthGuardService #canActivate should return false and navigate to login if user is not logged in" time="0.416" classname="unit.AuthGuardService"/>
+  <testcase name="AuthGuardService #canActivate should navigate to login if error occurs" time="0.565" classname="unit.AuthGuardService">
+    <failure type="">HttpErrorResponse: Http failure response for (unknown url): 404 undefined
+</failure>
+  </testcase>
+  <testcase name="DataService authenticateUser should return true if auth success" time="0.007" classname="unit.DataService"/>
+  <testcase name="DataService authenticateUser should store uid, token in localStorage if auth success" time="0.007" classname="unit.DataService"/>
+  <testcase name="DataService authenticateUser should return false on occurence of error" time="0.006" classname="unit.DataService"/>
+  <testcase name="DataService getAuthStatus should return true for valid users for checking auth status" time="0.006" classname="unit.DataService"/>
+  <testcase name="DataService getAuthStatus should return false for invalid users for checking auth status" time="0.008" classname="unit.DataService">
+    <failure type="">TypeError: You provided an invalid object where a stream was expected. You can provide an Observable, Promise, Array, or Iterable.
+    at subscribeToResult node_modules/rxjs/_esm5/util/subscribeToResult.js:74:1)
+    at CatchSubscriber.webpackJsonp../node_modules/rxjs/_esm5/operators/catchError.js.CatchSubscriber.error node_modules/rxjs/_esm5/operators/catchError.js:112:39)
+    at MapSubscriber.webpackJsonp../node_modules/rxjs/_esm5/Subscriber.js.Subscriber._error node_modules/rxjs/_esm5/Subscriber.js:134:1)
+    at MapSubscriber.webpackJsonp../node_modules/rxjs/_esm5/Subscriber.js.Subscriber.error node_modules/rxjs/_esm5/Subscriber.js:108:1)
+    at ErrorObservable.webpackJsonp../node_modules/rxjs/_esm5/observable/ErrorObservable.js.ErrorObservable._subscribe node_modules/rxjs/_esm5/observable/ErrorObservable.js:79:1)
+    at ErrorObservable.webpackJsonp../node_modules/rxjs/_esm5/Observable.js.Observable._trySubscribe node_modules/rxjs/_esm5/Observable.js:172:1)
+    at ErrorObservable.webpackJsonp../node_modules/rxjs/_esm5/Observable.js.Observable.subscribe node_modules/rxjs/_esm5/Observable.js:160:1)
+    at MapOperator.webpackJsonp../node_modules/rxjs/_esm5/operators/map.js.MapOperator.call node_modules/rxjs/_esm5/operators/map.js:57:1)
+    at Observable.webpackJsonp../node_modules/rxjs/_esm5/Observable.js.Observable.subscribe node_modules/rxjs/_esm5/Observable.js:157:1)
+    at CatchOperator.webpackJsonp../node_modules/rxjs/_esm5/operators/catchError.js.CatchOperator.call node_modules/rxjs/_esm5/operators/catchError.js:80:1)
+</failure>
+  </testcase>
+  <testcase name="DataService regNewUser should return success status if user added successfully" time="0.009" classname="unit.DataService"/>
+  <testcase name="DataService regNewUser status as failed if new user is not registered(username or email is already exists)" time="0.01" classname="unit.DataService"/>
+  <testcase name="DataService doLogOut should store clear localStorage" time="0.006" classname="unit.DataService"/>
+  <testcase name="DataService getUserDetails should return user details on providing valid user id" time="0.008" classname="unit.DataService"/>
+  <testcase name="DataService getUserDetails should return error on occurence of error" time="0.007" classname="unit.DataService"/>
+  <testcase name="DataService updateProfile should return true on providing valid user details" time="0.01" classname="unit.DataService"/>
+  <testcase name="DataService updateProfile should return false on occurence of error" time="0.005" classname="unit.DataService"/>
+  <testcase name="DataService registerPatient should return patientDetails  on reporting with valid user id " time="0.005" classname="unit.DataService"/>
+  <testcase name="DataService registerPatient should return error on occurence of error " time="0.021" classname="unit.DataService"/>
+  <testcase name="DataService getAllPatientsList should return user details on providing valid user id" time="0.005" classname="unit.DataService"/>
+  <testcase name="DataService getAllPatientsList should return error on occurence of error" time="0.006" classname="unit.DataService"/>
+  <testcase name="DataService getParticularPatient should return patient details on providing valid user id" time="0.011" classname="unit.DataService"/>
+  <testcase name="DataService getParticularPatient should return error on occurence of error" time="0.009" classname="unit.DataService"/>
+  <testcase name="DataService diseasesList should return list of diseases" time="0.006" classname="unit.DataService"/>
+  <testcase name="DataService diseasesList should return error on occurence of error" time="0.006" classname="unit.DataService"/>
+  <testcase name="DataService scheduleAppointment should return success status on reporting with valid appointmentDetails " time="0.007" classname="unit.DataService"/>
+  <testcase name="DataService scheduleAppointment should return error on occurence of error" time="0.005" classname="unit.DataService"/>
+  <testcase name="DataService getSinglePatientAppointments should return appointment details on providing valid appointment id" time="0.004" classname="unit.DataService"/>
+  <testcase name="DataService getSinglePatientAppointments should return error on occurence of error" time="0.007" classname="unit.DataService"/>
+  <testcase name="DataService deleteAppointment should return success status on providing valid appointment id" time="0.005" classname="unit.DataService"/>
+  <testcase name="DataService deleteAppointment should return error on occurence of error" time="0.005" classname="unit.DataService"/>
+  <testcase name="DataService requestedAppointments should return all appointments booked by all patients" time="0.029" classname="unit.DataService"/>
+  <testcase name="DataService requestedAppointments should return error on occurence of error" time="0.007" classname="unit.DataService"/>
+  <system-out>
+    <![CDATA[HeadlessChrome 0.0.0 (Linux 0.0.0) LOG: 'login response false'
+,HeadlessChrome 0.0.0 (Linux 0.0.0) LOG: 'login response true'
+,HeadlessChrome 0.0.0 (Linux 0.0.0) LOG: 'login response false'
+,HeadlessChrome 0.0.0 (Linux 0.0.0) ERROR: 'ERROR', Error: [object Object]
+Error: [object Object]
+    at viewWrappedDebugError (http://localhost:9876/_karma_webpack_/webpack:/node_modules/@angular/core/esm5/core.js:9806:1)
+    at callWithDebugContext (http://localhost:9876/_karma_webpack_/webpack:/node_modules/@angular/core/esm5/core.js:15108:1)
+    at Object.debugHandleEvent [as handleEvent] (http://localhost:9876/_karma_webpack_/webpack:/node_modules/@angular/core/esm5/core.js:14685:1)
+    at dispatchEvent (http://localhost:9876/_karma_webpack_/webpack:/node_modules/@angular/core/esm5/core.js:10004:1)
+    at http://localhost:9876/_karma_webpack_/webpack:/node_modules/@angular/core/esm5/core.js:10629:30
+    at HTMLButtonElement.<anonymous> (http://localhost:9876/_karma_webpack_/webpack:/node_modules/@angular/platform-browser/esm5/platform-browser.js:2628:26)
+    at ZoneDelegate.webpackJsonp../node_modules/zone.js/dist/zone.js.ZoneDelegate.invokeTask (http://localhost:9876/_karma_webpack_/webpack:/node_modules/zone.js/dist/zone.js:423:1)
+    at ProxyZoneSpec.webpackJsonp../node_modules/zone.js/dist/zone-testing.js.ProxyZoneSpec.onInvokeTask (http://localhost:9876/_karma_webpack_/webpack:/node_modules/zone.js/dist/zone-testing.js:320:1)
+    at ZoneDelegate.webpackJsonp../node_modules/zone.js/dist/zone.js.ZoneDelegate.invokeTask (http://localhost:9876/_karma_webpack_/webpack:/node_modules/zone.js/dist/zone.js:422:1)
+    at Object.onInvokeTask (http://localhost:9876/_karma_webpack_/webpack:/node_modules/zone.js/dist/zone.js:304:1)
+,HeadlessChrome 0.0.0 (Linux 0.0.0) ERROR: 'ERROR CONTEXT', DebugContext_{view: Object{def: Object{factory: ..., nodeFlags: ..., rootNodeFlags: ..., nodeMatchedQueries: ..., flags: ..., nodes: ..., updateDirectives: ..., updateRenderer: ..., handleEvent: ..., bindingCount: ..., outputCount: ..., lastRenderRootNode: ...}, parent: Object{def: ..., parent: ..., viewContainerParent: ..., parentNodeDef: ..., context: ..., component: ..., nodes: ..., state: ..., root: ..., renderer: ..., oldValues: ..., disposables: ..., initIndex: ...}, viewContainerParent: null, parentNodeDef: Object{nodeIndex: ..., parent: ..., renderParent: ..., bindingIndex: ..., outputIndex: ..., checkIndex: ..., flags: ..., childFlags: ..., directChildFlags: ..., childMatchedQueries: ..., matchedQueries: ..., matchedQueryIds: ..., references: ..., ngContentIndex: ..., childCount: ..., bindings: ..., bindingFlags: ..., outputs: ..., element: ..., provider: ..., text: ..., query: ..., ngContent: ...}, context: LoginComponent{route: ..., dataService: ..., isLoggedIn: ..., isLoginFailed: ..., emptyUserName: ..., minlengthUserName: ..., maxlengthUserName: ..., userNamePattern: ..., emptyPassword: ..., minlengthPassword: ..., maxlengthPassword: ..., passwordPattern: ..., loginForm: ..., doLogin: ...}, component: LoginComponent{route: ..., dataService: ..., isLoggedIn: ..., isLoginFailed: ..., emptyUserName: ..., minlengthUserName: ..., maxlengthUserName: ..., userNamePattern: ..., emptyPassword: ..., minlengthPassword: ..., maxlengthPassword: ..., passwordPattern: ..., loginForm: ..., doLogin: ...}, nodes: [..., ..., ..., ..., ..., ..., ..., ..., ..., ..., ..., ..., ..., ..., ..., ..., ..., ..., ..., ..., ..., ..., ..., ..., ..., ..., ..., ..., ..., ..., ..., ..., ..., ..., ..., ..., ..., ..., ..., ..., ..., ..., ..., ..., ..., ..., ..., ..., ..., ..., ..., ..., ..., ..., ..., ..., ..., ..., ..., ..., ..., ..., ..., ..., ..., ..., ..., ..., ..., ..., ..., ..., ..., ..., ..., ..., ..., ..., ..., ..., ..., ..., ..., ..., ..., ..., ..., ..., ..., ..., ..., ...], state: 1036, root: Object{ngModule: ..., injector: ..., projectableNodes: ..., selectorOrNode: ..., sanitizer: ..., rendererFactory: ..., renderer: ..., errorHandler: ...}, renderer: DebugRenderer2{delegate: ..., data: ...}, oldValues: [..., ..., ..., ..., ..., ..., ..., ..., ..., ..., ..., ..., ..., ..., ..., ..., ..., ..., ..., ..., ..., ..., ..., ..., ..., ..., ..., ..., ..., ..., ..., ..., ...], disposables: [..., ..., ..., ..., ..., ..., ..., ..., ..., ..., ..., ...], initIndex: -1}, nodeIndex: 81, nodeDef: Object{nodeIndex: 81, parent: Object{nodeIndex: ..., parent: ..., renderParent: ..., bindingIndex: ..., outputIndex: ..., checkIndex: ..., flags: ..., childFlags: ..., directChildFlags: ..., childMatchedQueries: ..., matchedQueries: ..., matchedQueryIds: ..., references: ..., ngContentIndex: ..., childCount: ..., bindings: ..., bindingFlags: ..., outputs: ..., element: ..., provider: ..., text: ..., query: ..., ngContent: ...}, renderParent: Object{nodeIndex: ..., parent: ..., renderParent: ..., bindingIndex: ..., outputIndex: ..., checkIndex: ..., flags: ..., childFlags: ..., directChildFlags: ..., childMatchedQueries: ..., matchedQueries: ..., matchedQueryIds: ..., references: ..., ngContentIndex: ..., childCount: ..., bindings: ..., bindingFlags: ..., outputs: ..., element: ..., provider: ..., text: ..., query: ..., ngContent: ...}, bindingIndex: 32, outputIndex: 10, checkIndex: 81, flags: 1, childFlags: 2, directChildFlags: 2, childMatchedQueries: 0, matchedQueries: Object{}, matchedQueryIds: 0, references: Object{}, ngContentIndex: null, childCount: 1, bindings: [...], bindingFlags: 8, outputs: [...], element: Object{ns: ..., name: ..., attrs: ..., template: ..., componentProvider: ..., componentView: ..., componentRendererType: ..., publicProviders: ..., allProviders: ..., handleEvent: ...}, provider: null, text: null, query: null, ngContent: null}, elDef: Object{nodeIndex: 81, parent: Object{nodeIndex: ..., parent: ..., renderParent: ..., bindingIndex: ..., outputIndex: ..., checkIndex: ..., flags: ..., childFlags: ..., directChildFlags: ..., childMatchedQueries: ..., matchedQueries: ..., matchedQueryIds: ..., references: ..., ngContentIndex: ..., childCount: ..., bindings: ..., bindingFlags: ..., outputs: ..., element: ..., provider: ..., text: ..., query: ..., ngContent: ...}, renderParent: Object{nodeIndex: ..., parent: ..., renderParent: ..., bindingIndex: ..., outputIndex: ..., checkIndex: ..., flags: ..., childFlags: ..., directChildFlags: ..., childMatchedQueries: ..., matchedQueries: ..., matchedQueryIds: ..., references: ..., ngContentIndex: ..., childCount: ..., bindings: ..., bindingFlags: ..., outputs: ..., element: ..., provider: ..., text: ..., query: ..., ngContent: ...}, bindingIndex: 32, outputIndex: 10, checkIndex: 81, flags: 1, childFlags: 2, directChildFlags: 2, childMatchedQueries: 0, matchedQueries: Object{}, matchedQueryIds: 0, references: Object{}, ngContentIndex: null, childCount: 1, bindings: [...], bindingFlags: 8, outputs: [...], element: Object{ns: ..., name: ..., attrs: ..., template: ..., componentProvider: ..., componentView: ..., componentRendererType: ..., publicProviders: ..., allProviders: ..., handleEvent: ...}, provider: null, text: null, query: null, ngContent: null}, elView: Object{def: Object{factory: ..., nodeFlags: ..., rootNodeFlags: ..., nodeMatchedQueries: ..., flags: ..., nodes: ..., updateDirectives: ..., updateRenderer: ..., handleEvent: ..., bindingCount: ..., outputCount: ..., lastRenderRootNode: ...}, parent: Object{def: ..., parent: ..., viewContainerParent: ..., parentNodeDef: ..., context: ..., component: ..., nodes: ..., state: ..., root: ..., renderer: ..., oldValues: ..., disposables: ..., initIndex: ...}, viewContainerParent: null, parentNodeDef: Object{nodeIndex: ..., parent: ..., renderParent: ..., bindingIndex: ..., outputIndex: ..., checkIndex: ..., flags: ..., childFlags: ..., directChildFlags: ..., childMatchedQueries: ..., matchedQueries: ..., matchedQueryIds: ..., references: ..., ngContentIndex: ..., childCount: ..., bindings: ..., bindingFlags: ..., outputs: ..., element: ..., provider: ..., text: ..., query: ..., ngContent: ...}, context: LoginComponent{route: ..., dataService: ..., isLoggedIn: ..., isLoginFailed: ..., emptyUserName: ..., minlengthUserName: ..., maxlengthUserName: ..., userNamePattern: ..., emptyPassword: ..., minlengthPassword: ..., maxlengthPassword: ..., passwordPattern: ..., loginForm: ..., doLogin: ...}, component: LoginComponent{route: ..., dataService: ..., isLoggedIn: ..., isLoginFailed: ..., emptyUserName: ..., minlengthUserName: ..., maxlengthUserName: ..., userNamePattern: ..., emptyPassword: ..., minlengthPassword: ..., maxlengthPassword: ..., passwordPattern: ..., loginForm: ..., doLogin: ...}, nodes: [..., ..., ..., ..., ..., ..., ..., ..., ..., ..., ..., ..., ..., ..., ..., ..., ..., ..., ..., ..., ..., ..., ..., ..., ..., ..., ..., ..., ..., ..., ..., ..., ..., ..., ..., ..., ..., ..., ..., ..., ..., ..., ..., ..., ..., ..., ..., ..., ..., ..., ..., ..., ..., ..., ..., ..., ..., ..., ..., ..., ..., ..., ..., ..., ..., ..., ..., ..., ..., ..., ..., ..., ..., ..., ..., ..., ..., ..., ..., ..., ..., ..., ..., ..., ..., ..., ..., ..., ..., ..., ..., ...], state: 1036, root: Object{ngModule: ..., injector: ..., projectableNodes: ..., selectorOrNode: ..., sanitizer: ..., rendererFactory: ..., renderer: ..., errorHandler: ...}, renderer: DebugRenderer2{delegate: ..., data: ...}, oldValues: [..., ..., ..., ..., ..., ..., ..., ..., ..., ..., ..., ..., ..., ..., ..., ..., ..., ..., ..., ..., ..., ..., ..., ..., ..., ..., ..., ..., ..., ..., ..., ..., ...], disposables: [..., ..., ..., ..., ..., ..., ..., ..., ..., ..., ..., ...], initIndex: -1}}
+,HeadlessChrome 0.0.0 (Linux 0.0.0) LOG: 'login response false'
+,HeadlessChrome 0.0.0 (Linux 0.0.0) LOG: 'login response false'
+,HeadlessChrome 0.0.0 (Linux 0.0.0) LOG: 'Profile [object Object]'
+,HeadlessChrome 0.0.0 (Linux 0.0.0) LOG: 'Profile [object Object]'
+,HeadlessChrome 0.0.0 (Linux 0.0.0) LOG: 'Profile [object Object]'
+,HeadlessChrome 0.0.0 (Linux 0.0.0) LOG: 'Profile [object Object]'
+,HeadlessChrome 0.0.0 (Linux 0.0.0) LOG: 'Profile [object Object]'
+,HeadlessChrome 0.0.0 (Linux 0.0.0) WARN: '
+      It looks like you're using the disabled attribute with a reactive form directive. If you set disabled to true
+      when you set up this control in your component class, the disabled attribute will actually be set in the DOM for
+      you. We recommend using this approach to avoid 'changed after checked' errors.
+       
+      Example: 
+      form = new FormGroup({
+        first: new FormControl({value: 'Nancy', disabled: true}, Validators.required),
+        last: new FormControl('Drew', Validators.required)
+      });
+    '
+,HeadlessChrome 0.0.0 (Linux 0.0.0) LOG: 'Profile [object Object]'
+,HeadlessChrome 0.0.0 (Linux 0.0.0) WARN: '
+      It looks like you're using the disabled attribute with a reactive form directive. If you set disabled to true
+      when you set up this control in your component class, the disabled attribute will actually be set in the DOM for
+      you. We recommend using this approach to avoid 'changed after checked' errors.
+       
+      Example: 
+      form = new FormGroup({
+        first: new FormControl({value: 'Nancy', disabled: true}, Validators.required),
+        last: new FormControl('Drew', Validators.required)
+      });
+    '
+,HeadlessChrome 0.0.0 (Linux 0.0.0) LOG: 'Profile [object Object]'
+,HeadlessChrome 0.0.0 (Linux 0.0.0) WARN: '
+      It looks like you're using the disabled attribute with a reactive form directive. If you set disabled to true
+      when you set up this control in your component class, the disabled attribute will actually be set in the DOM for
+      you. We recommend using this approach to avoid 'changed after checked' errors.
+       
+      Example: 
+      form = new FormGroup({
+        first: new FormControl({value: 'Nancy', disabled: true}, Validators.required),
+        last: new FormControl('Drew', Validators.required)
+      });
+    '
+,HeadlessChrome 0.0.0 (Linux 0.0.0) LOG: 'Profile [object Object]'
+,HeadlessChrome 0.0.0 (Linux 0.0.0) LOG: 'Profile [object Object]'
+,HeadlessChrome 0.0.0 (Linux 0.0.0) WARN: '
+      It looks like you're using the disabled attribute with a reactive form directive. If you set disabled to true
+      when you set up this control in your component class, the disabled attribute will actually be set in the DOM for
+      you. We recommend using this approach to avoid 'changed after checked' errors.
+       
+      Example: 
+      form = new FormGroup({
+        first: new FormControl({value: 'Nancy', disabled: true}, Validators.required),
+        last: new FormControl('Drew', Validators.required)
+      });
+    '
+,HeadlessChrome 0.0.0 (Linux 0.0.0) LOG: 'Profile [object Object]'
+,HeadlessChrome 0.0.0 (Linux 0.0.0) LOG: 'Profile [object Object]'
+,HeadlessChrome 0.0.0 (Linux 0.0.0) WARN: '
+      It looks like you're using the disabled attribute with a reactive form directive. If you set disabled to true
+      when you set up this control in your component class, the disabled attribute will actually be set in the DOM for
+      you. We recommend using this approach to avoid 'changed after checked' errors.
+       
+      Example: 
+      form = new FormGroup({
+        first: new FormControl({value: 'Nancy', disabled: true}, Validators.required),
+        last: new FormControl('Drew', Validators.required)
+      });
+    '
+,HeadlessChrome 0.0.0 (Linux 0.0.0) LOG: true
+,HeadlessChrome 0.0.0 (Linux 0.0.0) LOG: 'Profile [object Object]'
+,HeadlessChrome 0.0.0 (Linux 0.0.0) LOG: 'Profile [object Object]'
+,HeadlessChrome 0.0.0 (Linux 0.0.0) LOG: false
+,HeadlessChrome 0.0.0 (Linux 0.0.0) LOG: 'Profile [object Object]'
+,HeadlessChrome 0.0.0 (Linux 0.0.0) LOG: 'Profile [object Object]'
+,HeadlessChrome 0.0.0 (Linux 0.0.0) LOG: 'Profile [object Object]'
+,HeadlessChrome 0.0.0 (Linux 0.0.0) ERROR: 'Unhandled Promise rejection:', 'Cannot read property 'textContent' of null', '; Zone:', 'ProxyZone', '; Task:', 'Promise.then', '; Value:', TypeError: Cannot read property 'textContent' of null
+TypeError: Cannot read property 'textContent' of null
+    at http://localhost:9876/_karma_webpack_/main.bundle.js:2842:17
+    at http://localhost:9876/_karma_webpack_/webpack:/node_modules/@angular/core/esm5/testing.js:411:1
+    at ZoneDelegate.webpackJsonp../node_modules/zone.js/dist/zone.js.ZoneDelegate.invoke (http://localhost:9876/_karma_webpack_/webpack:/node_modules/zone.js/dist/zone.js:391:1)
+    at ProxyZoneSpec.webpackJsonp../node_modules/zone.js/dist/zone-testing.js.ProxyZoneSpec.onInvoke (http://localhost:9876/_karma_webpack_/webpack:/node_modules/zone.js/dist/zone-testing.js:289:1)
+    at ZoneDelegate.webpackJsonp../node_modules/zone.js/dist/zone.js.ZoneDelegate.invoke (http://localhost:9876/_karma_webpack_/webpack:/node_modules/zone.js/dist/zone.js:390:1)
+    at Zone.webpackJsonp../node_modules/zone.js/dist/zone.js.Zone.run (http://localhost:9876/_karma_webpack_/webpack:/node_modules/zone.js/dist/zone.js:150:1)
+    at http://localhost:9876/_karma_webpack_/webpack:/node_modules/zone.js/dist/zone.js:889:1
+    at ZoneDelegate.webpackJsonp../node_modules/zone.js/dist/zone.js.ZoneDelegate.invokeTask (http://localhost:9876/_karma_webpack_/webpack:/node_modules/zone.js/dist/zone.js:423:1)
+    at ProxyZoneSpec.webpackJsonp../node_modules/zone.js/dist/zone-testing.js.ProxyZoneSpec.onInvokeTask (http://localhost:9876/_karma_webpack_/webpack:/node_modules/zone.js/dist/zone-testing.js:320:1)
+    at ZoneDelegate.webpackJsonp../node_modules/zone.js/dist/zone.js.ZoneDelegate.invokeTask (http://localhost:9876/_karma_webpack_/webpack:/node_modules/zone.js/dist/zone.js:422:1), 'TypeError: Cannot read property 'textContent' of null
+    at http://localhost:9876/_karma_webpack_/main.bundle.js:2842:17
+    at http://localhost:9876/_karma_webpack_/webpack:/node_modules/@angular/core/esm5/testing.js:411:1
+    at ZoneDelegate.webpackJsonp../node_modules/zone.js/dist/zone.js.ZoneDelegate.invoke (http://localhost:9876/_karma_webpack_/webpack:/node_modules/zone.js/dist/zone.js:391:1)
+    at ProxyZoneSpec.webpackJsonp../node_modules/zone.js/dist/zone-testing.js.ProxyZoneSpec.onInvoke (http://localhost:9876/_karma_webpack_/webpack:/node_modules/zone.js/dist/zone-testing.js:289:1)
+    at ZoneDelegate.webpackJsonp../node_modules/zone.js/dist/zone.js.ZoneDelegate.invoke (http://localhost:9876/_karma_webpack_/webpack:/node_modules/zone.js/dist/zone.js:390:1)
+    at Zone.webpackJsonp../node_modules/zone.js/dist/zone.js.Zone.run (http://localhost:9876/_karma_webpack_/webpack:/node_modules/zone.js/dist/zone.js:150:1)
+    at http://localhost:9876/_karma_webpack_/webpack:/node_modules/zone.js/dist/zone.js:889:1
+    at ZoneDelegate.webpackJsonp../node_modules/zone.js/dist/zone.js.ZoneDelegate.invokeTask (http://localhost:9876/_karma_webpack_/webpack:/node_modules/zone.js/dist/zone.js:423:1)
+    at ProxyZoneSpec.webpackJsonp../node_modules/zone.js/dist/zone-testing.js.ProxyZoneSpec.onInvokeTask (http://localhost:9876/_karma_webpack_/webpack:/node_modules/zone.js/dist/zone-testing.js:320:1)
+    at ZoneDelegate.webpackJsonp../node_modules/zone.js/dist/zone.js.ZoneDelegate.invokeTask (http://localhost:9876/_karma_webpack_/webpack:/node_modules/zone.js/dist/zone.js:422:1)'
+,HeadlessChrome 0.0.0 (Linux 0.0.0) ERROR: 'Unhandled Promise rejection:', 'Cannot read property 'textContent' of null', '; Zone:', 'ProxyZone', '; Task:', 'Promise.then', '; Value:', TypeError: Cannot read property 'textContent' of null
+TypeError: Cannot read property 'textContent' of null
+    at http://localhost:9876/_karma_webpack_/main.bundle.js:2871:17
+    at http://localhost:9876/_karma_webpack_/webpack:/node_modules/@angular/core/esm5/testing.js:411:1
+    at ZoneDelegate.webpackJsonp../node_modules/zone.js/dist/zone.js.ZoneDelegate.invoke (http://localhost:9876/_karma_webpack_/webpack:/node_modules/zone.js/dist/zone.js:391:1)
+    at ProxyZoneSpec.webpackJsonp../node_modules/zone.js/dist/zone-testing.js.ProxyZoneSpec.onInvoke (http://localhost:9876/_karma_webpack_/webpack:/node_modules/zone.js/dist/zone-testing.js:289:1)
+    at ZoneDelegate.webpackJsonp../node_modules/zone.js/dist/zone.js.ZoneDelegate.invoke (http://localhost:9876/_karma_webpack_/webpack:/node_modules/zone.js/dist/zone.js:390:1)
+    at Zone.webpackJsonp../node_modules/zone.js/dist/zone.js.Zone.run (http://localhost:9876/_karma_webpack_/webpack:/node_modules/zone.js/dist/zone.js:150:1)
+    at http://localhost:9876/_karma_webpack_/webpack:/node_modules/zone.js/dist/zone.js:889:1
+    at ZoneDelegate.webpackJsonp../node_modules/zone.js/dist/zone.js.ZoneDelegate.invokeTask (http://localhost:9876/_karma_webpack_/webpack:/node_modules/zone.js/dist/zone.js:423:1)
+    at ProxyZoneSpec.webpackJsonp../node_modules/zone.js/dist/zone-testing.js.ProxyZoneSpec.onInvokeTask (http://localhost:9876/_karma_webpack_/webpack:/node_modules/zone.js/dist/zone-testing.js:320:1)
+    at ZoneDelegate.webpackJsonp../node_modules/zone.js/dist/zone.js.ZoneDelegate.invokeTask (http://localhost:9876/_karma_webpack_/webpack:/node_modules/zone.js/dist/zone.js:422:1), 'TypeError: Cannot read property 'textContent' of null
+    at http://localhost:9876/_karma_webpack_/main.bundle.js:2871:17
+    at http://localhost:9876/_karma_webpack_/webpack:/node_modules/@angular/core/esm5/testing.js:411:1
+    at ZoneDelegate.webpackJsonp../node_modules/zone.js/dist/zone.js.ZoneDelegate.invoke (http://localhost:9876/_karma_webpack_/webpack:/node_modules/zone.js/dist/zone.js:391:1)
+    at ProxyZoneSpec.webpackJsonp../node_modules/zone.js/dist/zone-testing.js.ProxyZoneSpec.onInvoke (http://localhost:9876/_karma_webpack_/webpack:/node_modules/zone.js/dist/zone-testing.js:289:1)
+    at ZoneDelegate.webpackJsonp../node_modules/zone.js/dist/zone.js.ZoneDelegate.invoke (http://localhost:9876/_karma_webpack_/webpack:/node_modules/zone.js/dist/zone.js:390:1)
+    at Zone.webpackJsonp../node_modules/zone.js/dist/zone.js.Zone.run (http://localhost:9876/_karma_webpack_/webpack:/node_modules/zone.js/dist/zone.js:150:1)
+    at http://localhost:9876/_karma_webpack_/webpack:/node_modules/zone.js/dist/zone.js:889:1
+    at ZoneDelegate.webpackJsonp../node_modules/zone.js/dist/zone.js.ZoneDelegate.invokeTask (http://localhost:9876/_karma_webpack_/webpack:/node_modules/zone.js/dist/zone.js:423:1)
+    at ProxyZoneSpec.webpackJsonp../node_modules/zone.js/dist/zone-testing.js.ProxyZoneSpec.onInvokeTask (http://localhost:9876/_karma_webpack_/webpack:/node_modules/zone.js/dist/zone-testing.js:320:1)
+    at ZoneDelegate.webpackJsonp../node_modules/zone.js/dist/zone.js.ZoneDelegate.invokeTask (http://localhost:9876/_karma_webpack_/webpack:/node_modules/zone.js/dist/zone.js:422:1)'
+,HeadlessChrome 0.0.0 (Linux 0.0.0) LOG: undefined
+,HeadlessChrome 0.0.0 (Linux 0.0.0) LOG: [Object{AppointmentDate: '2019-10-03T00:00:00.000Z', bookingTime: '2019-09-27T10:28:55.042Z', disease: 'acid reflex', fname: 'firstname', lname: 'lastname', patientId: '5d8e150b3768ab34dc7e607c', priority: 'Normal', _id: '5d8de4671753e027ed7e5358'}, Object{AppointmentDate: '2019-10-03T00:00:00.000Z', bookingTime: '2019-09-27T10:28:55.042Z', disease: 'acid reflex', fname: 'firstname', lname: 'lastname', patientId: '5d8e150b3768ab34dc7e607c', priority: 'Normal', _id: '5d8de4671753e027ed7e5359'}]
+,HeadlessChrome 0.0.0 (Linux 0.0.0) LOG: [Object{AppointmentDate: '2019-10-03T00:00:00.000Z', bookingTime: '2019-09-27T10:28:55.042Z', disease: 'acid reflex', fname: 'firstname', lname: 'lastname', patientId: '5d8e150b3768ab34dc7e607c', priority: 'Normal', _id: '5d8de4671753e027ed7e5358'}, Object{AppointmentDate: '2019-10-03T00:00:00.000Z', bookingTime: '2019-09-27T10:28:55.042Z', disease: 'acid reflex', fname: 'firstname', lname: 'lastname', patientId: '5d8e150b3768ab34dc7e607c', priority: 'Normal', _id: '5d8de4671753e027ed7e5359'}]
+,HeadlessChrome 0.0.0 (Linux 0.0.0) LOG: [Object{AppointmentDate: '2019-10-03T00:00:00.000Z', bookingTime: '2019-09-27T10:28:55.042Z', disease: 'acid reflex', fname: 'firstname', lname: 'lastname', patientId: '5d8e150b3768ab34dc7e607c', priority: 'Normal', _id: '5d8de4671753e027ed7e5358'}, Object{AppointmentDate: '2019-10-03T00:00:00.000Z', bookingTime: '2019-09-27T10:28:55.042Z', disease: 'acid reflex', fname: 'firstname', lname: 'lastname', patientId: '5d8e150b3768ab34dc7e607c', priority: 'Normal', _id: '5d8de4671753e027ed7e5359'}]
+,HeadlessChrome 0.0.0 (Linux 0.0.0) LOG: [Object{AppointmentDate: '2019-10-03T00:00:00.000Z', bookingTime: '2019-09-27T10:28:55.042Z', disease: 'acid reflex', fname: 'firstname', lname: 'lastname', patientId: '5d8e150b3768ab34dc7e607c', priority: 'Normal', _id: '5d8de4671753e027ed7e5358'}, Object{AppointmentDate: '2019-10-03T00:00:00.000Z', bookingTime: '2019-09-27T10:28:55.042Z', disease: 'acid reflex', fname: 'firstname', lname: 'lastname', patientId: '5d8e150b3768ab34dc7e607c', priority: 'Normal', _id: '5d8de4671753e027ed7e5359'}]
+,HeadlessChrome 0.0.0 (Linux 0.0.0) LOG: [Object{AppointmentDate: '2019-10-03T00:00:00.000Z', bookingTime: '2019-09-27T10:28:55.042Z', disease: 'acid reflex', fname: 'firstname', lname: 'lastname', patientId: '5d8e150b3768ab34dc7e607c', priority: 'Normal', _id: '5d8de4671753e027ed7e5358'}, Object{AppointmentDate: '2019-10-03T00:00:00.000Z', bookingTime: '2019-09-27T10:28:55.042Z', disease: 'acid reflex', fname: 'firstname', lname: 'lastname', patientId: '5d8e150b3768ab34dc7e607c', priority: 'Normal', _id: '5d8de4671753e027ed7e5359'}]
+,HeadlessChrome 0.0.0 (Linux 0.0.0) LOG: 'User ID Exist'
+
+]]>
+  </system-out>
+  <system-err/>
+</testsuite>
